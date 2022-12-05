@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#login-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-1 img{
+    margin-left: -.7em;
+    margin-right: -2em;
+    width: 50vw;
+    height: 100vh;
+}
+
+#login-2{
+    background-color: #070c49e7;
+    min-width: 50vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-p {
+    background: #FFF;
+    max-width: 100%;
+    min-width: 20%;
+    width: 40%;
+    min-height: 40vh;
+    margin-left: 0;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.img {
+    text-align: center;
+}
+
+.img img {
+    width: 100px;
+    height: 60px;
+}
+
+.container-p p {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-p h2 {
+    font-weight: 600;
+    margin-top: .3em;
+    margin-bottom: 2rem;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-p h2::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 38px;
+    margin-left: 16%;
+    bottom: 0px;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #eaec6c, #070c49);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field input {
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.input-field input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+form input[type="submit"] {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding: 0.4rem;
+    background: linear-gradient(to left, #eaec6c, #070c49);
+    cursor: pointer;
+    color: #FFF;
+    font-size: 0.9;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+form input[type="submit"]:hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, #070c49, #eaec6c);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.footer span {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.8rem;
+}
+
+.footer span a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.8rem;
+}
+
+.footer span a:hover{
+    color: rgba(3, 38, 238, 0.7);
+}
+
+#particles-js {
+    height: 100vh;
+    width: 50%;
+    position: fixed;
+    z-index: 0;
+}
+
+@media screen and (max-width: 1709px) {
+    .container-p h2::before {
+        width: 35px;
+        margin-left: 14%;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (max-width: 1541px) {
+    .container-p h2::before {
+        width: 30px;
+        margin-left: 20%;
+        border-radius: 8px;
+    }
+    .container-p {
+        max-width: 100%;
+        min-width: 20%;
+        width: 50%;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 1301px) {
+    .container-p h2::before {
+        width: 32px;
+        margin-left: 18%;
+    }
+    .container-p {
+        max-width: 100%;
+        min-width: 20%;
+        width: 55%;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 1171px) {
+    .container-p h2::before {
+        width: 32px;
+        margin-left: 12%;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .container-p h2::before {
+        width: 32px;
+        margin-left: 13%;
+    }
+    .container-p {
+        max-width: 100%;
+        min-width: 20%;
+        width: 65%;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .container-p {
+        max-width: 100%;
+        min-width: 20%;
+        width: 75%;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 809px) {
+    .container-p {
+        max-width: 100%;
+        min-width: 20%;
+        width: 85%;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .container-p h2::before {
+        width: 32px;
+        margin-left: 15%;
+    }
+
+    .container-p {
+        max-width: 100%;
+        min-width: 20%;
+        width: 45%;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 689px) {
+    .container-p h2::before {
+        width: 32px;
+        margin-left: 18%;
+    }
+
+    .container-p {
+        max-width: 100%;
+        min-width: 20%;
+        width: 55%;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 587px) {
+    .container-p h2::before {
+        width: 32px;
+        margin-left: 18%;
+    }
+
+    .container-p {
+        max-width: 100%;
+        min-width: 20%;
+        width: 65%;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container-p h2::before {
+        width: 32px;
+        margin-left: 13%;
+    }
+
+    .container-p {
+        max-width: 100%;
+        min-width: 20%;
+        width: 65%;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 454px) {
+    .container-p h2::before {
+        width: 32px;
+        margin-left: 13%;
+    }
+
+    .container-p {
+        max-width: 100%;
+        min-width: 20%;
+        width: 75%;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container-p h2::before {
+        width: 32px;
+        margin-left: 13%;
+    }
+
+    .container-p {
+        max-width: 100%;
+        min-width: 20%;
+        width: 85%;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 368px) {
+    .container-p h2::before {
+        width: 32px;
+        margin-left: 10%;
+    }
+
+    .container-p {
+        max-width: 100%;
+        min-width: 20%;
+        width: 90%;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 342px) {
+
+    .container-p {
+        max-width: 100%;
+        min-width: 20%;
+        width: 95%;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 312px) {
+
+    .container-p {
+        max-width: 100%;
+        min-width: 20%;
+        width: 100%;
+        z-index: 1;
+    }
+}

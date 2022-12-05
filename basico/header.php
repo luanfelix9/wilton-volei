@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Sistema de cadastro e gerenciamento de equipes.">
         <meta name="keywords" content="CAMPEONATO BRASILEIRO DE VOLEIBOL SENTADO, CBVD">
-        <meta name="author" content="Luan Felix">
+        <meta name="author" content="Luan Felix e Vitor">
         <meta http-equiv="cache-control" content="no-cache" />
         <meta http-equiv="content-language" content="pt-br" />
         <meta http-equiv="imagetoolbar" content="no" />
@@ -19,16 +19,16 @@
         <title><?php echo $titulo?></title>
 
         <!--Icone na Barra do Site-->
-        <link rel="shortcut icon" href="/img/Login/icone.png" />
+        <link rel="shortcut icon" href="img/Login/icone.png" />
         
         <!--Bootstrep 5-->
-        <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css"></link>
-        <script src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"></link>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
         <!--CSS Próprio-->
-        <link rel="stylesheet" href="/css/main.css">
-        <link rel="stylesheet" href="/css/login.css">
-        <link rel="stylesheet" href="/css/rodape.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/rodape.css">
 
     </head>
     <body>
