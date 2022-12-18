@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.imgNav {
+    background-image: url("../img/nav/nav.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem 0 2rem 0;
+    width: 98vw;
+}
+
+.imgNav img {
+    width: 100%;
+    height: 100%;
+}
+
+.imgNav li {
+    list-style-type: none;
+    color: aliceblue;
+}
+
+.logoEsquerdaNav img{
+    width: 8%;
+    height: 8%;
+    padding-left: 1em;
+}
+
+.itemNav{
+    margin-left: 2em;
+    padding-top: .5em;
+}
