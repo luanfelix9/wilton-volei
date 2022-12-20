@@ -24,7 +24,7 @@
 #login-2{
     background-color: #070c49e7;
     min-width: 50vw;
-    min-height: 100vh;
+    min-height: 100vh; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +47,7 @@
     text-align: center;
 }
 
-.img img {
+#img img {
     width: 100px;
     height: 60px;
 }
@@ -63,6 +63,7 @@
     margin-bottom: 2rem;
     position: relative;
     font-family: 'Roboto', sans-serif;
+    color: black;
 }
 
 .container-p h2::before {
@@ -137,6 +138,14 @@ form input[type="submit"]:hover {
     width: 50%;
     position: fixed;
     z-index: 0;
+}
+
+.footer a{
+    color: black;
+}
+
+.footer a:hover{
+    color: rgba(3, 38, 238, 0.7);;
 }
 
 @media screen and (max-width: 1709px) {

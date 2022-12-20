@@ -11,13 +11,14 @@
     include 'basico/header.php'; 
 
 ?>
-        <link rel="stylesheet" href="css/main.css">
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/login.css">
-        <link rel="stylesheet" href="css/rodape.css">
+        <link rel="stylesheet" href="footer/rodape.css">
     </head>
     <body>
         <div class="container-fluid">
-            <div class="row align-items-start">
+            <div class="row">
                 <div id="login-1" class="col d-none d-md-block">
                     <img src="img/Login/esquerdaLogin.jpg" alt="Imagem Login">
                 </div>
@@ -101,4 +102,4 @@
         <script src="js/particles.js"></script>
         <script src="js/app-login.js"></script>
 
-<?php include 'basico/footer.php';?>
+<?php include 'footer/footer.php';?>
