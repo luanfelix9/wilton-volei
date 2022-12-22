@@ -1,3 +1,4 @@
+        </div>
         <footer id="footer">
             <p>Desenvolvido pela Confederação Brasileira de Voleibol para Deficientes &copy; CBVD <?php echo $Ano?></p>
         </footer>
