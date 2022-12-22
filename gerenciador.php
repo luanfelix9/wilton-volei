@@ -89,7 +89,6 @@
                             <a href="button.html" class="dropdown-item">Criar Evento</a>
                             <a href="typography.html" class="dropdown-item">Inscrever no Evento</a>
                             <a href="element.html" class="dropdown-item">Acompanhar Evento</a>
-                            <a href="element.html" class="dropdown-item">Acompanhar Evento</a>
                             <a href="element.html" class="dropdown-item">Relatório de Eventos</a>
                         </div>
                     </div>
@@ -176,38 +175,46 @@
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
                     <div class="col">
-                        <div class="topNav rounded d-flex align-items-center justify-content-between p-4">
-                            <i class="fa fa-tachometer-alt fa-3x text-secondary"></i>
-                            <div class="ms-3">
-                                <p class="mb-2">Início</p>
+                        <a href="">
+                            <div class="topNav rounded d-flex align-items-center justify-content-between p-4">
+                                <i class="fa fa-tachometer-alt fa-3x text-secondary"></i>
+                                <div class="ms-3">
+                                    <p class="mb-2">Início</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col">
-                        <div class="topNav rounded d-flex align-items-center justify-content-between p-4">
-                            <i class="bi bi-people-fill fa-3x text-secondary"></i>
-                            <div class="ms-3">
-                                <p class="mb-2">Equipe</p>
+                        <a href="">
+                            <div class="topNav rounded d-flex align-items-center justify-content-between p-4">
+                                <i class="bi bi-people-fill fa-3x text-secondary"></i>
+                                <div class="ms-3">
+                                    <p class="mb-2">Equipe</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="row g-4">
                     <div class="col">
-                        <div class="topNav rounded d-flex align-items-center justify-content-between p-4">
-                            <i class="bi bi-person-badge fa-3x text-secondary"></i>
-                            <div class="ms-3">
-                                <p class="mb-2">Pessoas</p>
+                        <a href="">
+                            <div class="topNav rounded d-flex align-items-center justify-content-between p-4">
+                                <i class="bi bi-person-badge fa-3x text-secondary"></i>
+                                <div class="ms-3">
+                                    <p class="mb-2">Pessoas</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col">
-                        <div class="topNav rounded d-flex align-items-center justify-content-between p-4">
-                            <i class="bi bi-joystick fa-3x text-secondary"></i>
-                            <div class="ms-3">
-                                <p class="mb-2">Eventos</p>
+                        <a href="">
+                            <div class="topNav rounded d-flex align-items-center justify-content-between p-4">
+                                <i class="bi bi-joystick fa-3x text-secondary"></i>
+                                <div class="ms-3">
+                                    <p class="mb-2">Eventos</p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
