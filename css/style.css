@@ -205,7 +205,7 @@ h6{
 
 .content .navbar .navbar-nav .nav-link:hover,
 .content .navbar .navbar-nav .nav-link.active {
-    color: rgba(254,207,36,255);
+    color: green;
 }
 
 .content .navbar .sidebar-toggler,
