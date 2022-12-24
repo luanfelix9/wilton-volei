@@ -46,6 +46,8 @@
         <link href="css/style.css" rel="stylesheet">
 
         <link rel="stylesheet" href="footer/rodape.css">
+
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
     <body>
 
@@ -70,7 +72,7 @@
                         <a href="equipe.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-people-fill"></i> Equipe</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="editarEquipe.php" class="dropdown-item"><i class="bi bi-pencil-square"></i> Editar Equipe</a>
-                            <a href="#" class="dropdown-item"><i class="bi bi-file-earmark-medical"></i> Relatório de Equipe</a>
+                            <a href="relatorioEquipe.php" class="dropdown-item"><i class="bi bi-file-earmark-medical"></i> Relatório de Equipe</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
@@ -163,7 +165,7 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-end border-0 rounded-0 rounded-bottom m-0">
                             <a href="editarEquipe.php" class="dropdown-item"><i class="bi bi-pencil-square"></i> Editar Equipe</a>
-                            <a href="#" class="dropdown-item"><i class="bi bi-file-earmark-medical"></i> Relatório de Equipe</a>
+                            <a href="relatorioEquipe.php" class="dropdown-item"><i class="bi bi-file-earmark-medical"></i> Relatório de Equipe</a>
                             <a href="#" class="dropdown-item">Sair</a>
                         </div>
                     </div>
@@ -171,8 +173,195 @@
             </nav>
             <!-- Navbar End -->
 
-            
+            <script> 
+                swal({
+                    title: "ATENÇÃO!",
+                    text: "Além do preenchimento do formulário, é necessário enviar cópia de documentação do clube. Após aprovação do cadastro, login e senha serão enviados para os e-mails cadastrados Documentação jurídica exigida: Cópia simples do Estatuto do clube/associação; Cópia simples da Ata de Fundação do clube/associação; Cópia simples da Ata de eleição e posse da atual diretoria; Cópia do CNPJ da entidade disponível",
+                    icon: "info",
+                });
+            </script>
 
+            <div class="container">
+                <div class="row">
+                    <div class="col Title">
+                        <h1>Dados do Clube</h1>
+                    </div>
+                </div>
+                <form action="#">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group col-md-15">
+                                    <input class="form-control" type="text" name="nomeRC" id="nomeRC" autocomplete="off" maxlength="140" required="required" placeholder="*Nome Completo:">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group col-md-15">
+                                    <input class="form-control" type="email" name="emailRC" id="emailRC" autocomplete="off" maxlength="140" required="required" placeholder="*E-mail:">
+                                    <p id="info"><span class="obrigatorio">⚠️</span>(Seu Login e Senha serão enviados para este e-mail)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group col-md-8 inputBottom">
+                                    <input class="form-control" type="text" name="cnpjRC" id="cnpjRC" autocomplete="off" maxlength="18" required="required" placeholder="*CNPJ:">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div id="siglaRC" class="form-group col-md-10 inputBottom">
+                                    <input class="form-control" type="text" name="siglaRC" id="siglaRC" autocomplete="off" maxlength="10" required="required" placeholder="*Sigla:">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div id="dataF" class="form-group col-md-3 inputBottom">
+                                    <input class="form-control" type="date" name="dataF" id="dataF" maxlength="10" required="required" placeholder="*Data de Fundação:">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group col-md-7 inputBottom">
+                                    <input class="form-control" type="text" name="foneRC" id="foneRC" autocomplete="off" maxlength="14" required="required" placeholder="Telefone:">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div id="div-cellRC" class="form-group col-md-10 inputBottom">
+                                    <input class="form-control" type="text" name="cellRC" id="cellRC" autocomplete="off" maxlength="15" required="required" placeholder="Celular:">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div id="siteRC" class="form-group col-md-6 inputBottom">
+                                    <input class="form-control" type="text" name="siteRC" id="siteRC" autocomplete="off" maxlength="140" placeholder="Site:">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group col-md-10 inputBottom">
+                                    <input class="form-control" type="text" name="lograRC" id="lograRC" autocomplete="off" maxlength="140" required="required" placeholder="*Logradouro:">
+                                    <p id="info"><span class="obrigatorio">⚠️</span>(Logradouro: rua, avenida, etc)</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group col-md-10 inputBottom">
+                                    <input class="form-control" type="text" name="bairroRC" id="bairroRC" autocomplete="off" maxlength="140" required="required" placeholder="*Bairro:">
+                                </div> 
+                            </div>
+                            <div class="col">
+                                <div name="cidade" class="form-group col-md-10 inputBottom">
+                                    <input class="form-control" type="text" name="cidade" id="cidade" required="required" placeholder="*Cidade:">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div name="estado" class="form-group col-md-10 inputBottom">
+                                    <input class="form-control" list="datalistOptionsNUF" name="uf" id="uf" required="required" onChange="selectUF()" placeholder="Estado:">
+                                    <datalist id="datalistOptionsNUF">
+                                        <option id="opp01" value="AC">AC - Acre</option>
+                                        <option id="opp02" value="AL">AL - Alagoas</option>
+                                        <option id="opp03" value="AP">AP - Amapá</option>
+                                        <option id="opp04" value="AM">AM - Amazonas</option>
+                                        <option id="opp05" value="BA">BA - Bahia</option>
+                                        <option id="opp06" value="CE">CE - Ceará</option>
+                                        <option id="opp07" value="DF">DF - Distrito Federal</option>
+                                        <option id="opp08" value="ES">ES - Espírito Santo</option>
+                                        <option id="opp09" value="GO">GO - Goiás</option>
+                                        <option id="opp10" value="MA">MA - Maranhão</option>
+                                        <option id="opp11" value="MT">MT - Mato Grosso</option>
+                                        <option id="opp12" value="MS">MS - Mato Grosso do Sul</option>
+                                        <option id="opp13" value="MG">MG - Minas Gerais</option>
+                                        <option id="opp14" value="PA">PA - Pará</option>
+                                        <option id="opp15" value="PB">PB - Paraíba</option>
+                                        <option id="opp16" value="PR">PR - Paraná</option>
+                                        <option id="opp17" value="PE">PE - Pernambuco</option>
+                                        <option id="opp18" value="PI">PI - Piauí</option>
+                                        <option id="opp19" value="RJ">RJ - Rio de Janeiro</option>
+                                        <option id="opp20" value="RN">RN - Rio Grande do Norte</option>
+                                        <option id="opp21" value="RS">RS - Rio Grande do Sul</option>
+                                        <option id="opp22" value="RO">RO - Rondônia</option>
+                                        <option id="opp23" value="RR">RR - Roraima</option>
+                                        <option id="opp24" value="SC">SC - Santa Catarina</option>
+                                        <option id="opp25" value="SP">SP - São Paulo</option>
+                                        <option id="opp26" value="SE">SE - Sergipe</option>
+                                        <option id="opp27" value="TO">TO - Tocantins</option>
+                                    </datalist>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group col-md-10 inputBottom">
+                                    <input class="form-control" type="text" name="cepRC" id="cepRC" autocomplete="off" maxlength="9" required="required" placeholder="*CEP:">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div id="nRC" class="form-group col-md-10 inputBottom">
+                                    <input class="form-control" type="text" name="nRC" id="nRC" autocomplete="off" maxlength="5" required="required" placeholder="*Número:">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div id="comRC" class="form-group col-md-10 inputBottom">
+                                    <input class="form-control" type="text" name="nRC" id="nRC" autocomplete="off" maxlength="5" required="required" placeholder="*Complemento::">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-12">
+                                <p id="infoDados">Modalidades</p>
+                            </div>
+                            <div class="col">
+                                <div id="div-checkbox" class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck1">
+                                        VOLEIBOL DE QUADRA - MASCOLINO
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div id="div-checkbox" class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck2">
+                                        VOLEIBOL DE QUADRA - FEMININO
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div id="div-checkbox" class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck3">
+                                    VOLEIBOL DE AREIA - MASCOLINO
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div id="div-checkbox" class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck4">
+                                    VOLEIBOL DE AREIA - FEMININO
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <br>
+                                <a href="gerenciador.php" class="btn btn-danger">Cancelar</a>
+                                <button type="submit" class="btn btn-primary">Registrar</button>
+                            </div>
+                        </div>
+
+                    </div> 
+                </form>
+            </div>
         </div>
         <footer id="footer">
             <p>Desenvolvido pela Confederação Brasileira de Voleibol para Deficientes &copy; CBVD <?php echo $Ano?></p>

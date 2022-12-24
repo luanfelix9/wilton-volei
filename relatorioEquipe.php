@@ -33,7 +33,7 @@
         
         <!-- Icon Font Stylesheet -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
 
         <!-- Libraries Stylesheet -->
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -175,11 +175,11 @@
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
                     <div class="col">
-                        <a href="editarEquipe.php">
+                        <a href="">
                             <div class="topNav rounded d-flex align-items-center justify-content-between p-4 menuPrincipal">
-                                <i class="bi bi-pencil-square fa-3x text-secondary"></i>
+                                <i class="bi bi-house fa-3x text-secondary"></i>
                                 <div class="ms-3">
-                                    <p class="mb-2">Editar Equipe</p>
+                                    <p class="mb-2">Início</p>
                                 </div>
                             </div>
                         </a>
@@ -187,9 +187,9 @@
                     <div class="col">
                         <a href="equipe.php">
                             <div class="topNav rounded d-flex align-items-center justify-content-between p-4">
-                                <i class="bi bi-file-earmark-medical fa-3x text-secondary"></i>
+                                <i class="bi bi-people-fill fa-3x text-secondary"></i>
                                 <div class="ms-3">
-                                    <p class="mb-2">Relatório de Equipe</p>
+                                    <p class="mb-2">Equipe</p>
                                 </div>
                             </div>
                         </a>

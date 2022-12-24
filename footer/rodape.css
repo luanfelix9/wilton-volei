@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
 footer {
-    position: absolute;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.905);
     color: #FFF;
