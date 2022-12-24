@@ -164,7 +164,7 @@
                         <div class="dropdown-menu dropdown-menu-end border-0 rounded-0 rounded-bottom m-0">
                             <a href="editarEquipe.php" class="dropdown-item"><i class="bi bi-pencil-square"></i> Editar Equipe</a>
                             <a href="relatorioEquipe.php" class="dropdown-item"><i class="bi bi-file-earmark-medical"></i> Relatório de Equipe</a>
-                            <a href="#" class="dropdown-item">Sair</a>
+                            <a href="logof-back.php" class="dropdown-item">Sair</a>
                         </div>
                     </div>
                 </div>

@@ -166,7 +166,7 @@
                         <div class="dropdown-menu dropdown-menu-end border-0 rounded-0 rounded-bottom m-0">
                             <a href="editarEquipe.php" class="dropdown-item"><i class="bi bi-pencil-square"></i> Editar Equipe</a>
                             <a href="relatorioEquipe.php" class="dropdown-item"><i class="bi bi-file-earmark-medical"></i> Relatório de Equipe</a>
-                            <a href="#" class="dropdown-item">Sair</a>
+                            <a href="logof-back.php" class="dropdown-item">Sair</a>
                         </div>
                     </div>
                 </div>
@@ -201,7 +201,19 @@
                             <div class="col">
                                 <div class="form-group col-md-15">
                                     <input class="form-control" type="email" name="emailRC" id="emailRC" autocomplete="off" maxlength="140" required="required" placeholder="*E-mail:">
-                                    <p id="info"><span class="obrigatorio">⚠️</span>(Seu Login e Senha serão enviados para este e-mail)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group col-md-15">
+                                    <input class="form-control" type="password" name="senhar" id="senhar" autocomplete="off" maxlength="140" required="required" placeholder="*Senha:">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group col-md-15">
+                                    <input class="form-control" type="password" name="senhar2" id="senhar2" autocomplete="off" maxlength="140" required="required" placeholder="*Confirmar Senha:">
                                 </div>
                             </div>
                         </div>
