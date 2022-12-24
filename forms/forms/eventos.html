@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Geral - CPB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/stylee.css">
+    <script src="../js/jQuery.js" defer></script>
+    <script src="../js/bootstrap.bundle.min.js" defer></script>
+    <script src="../js/bootstrap.min.js" defer></script>
+    <script src="../js/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js" defer></script>
+    <Script src="../js/mask.js" defer></Script>
+</head>
+<body>
+    <div id="fade" class="hide">
+        <div id="loader" class="spinner-border text-info hide" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div id="messege" class="hide">
+            <div class="alert alert-light" role="alert">
+                <h4>Mensagem:</h4>
+                <p>Texto da mensagem</p>
+                <button id="clonse-message" type="button" class="btn btn-secondary">Fechar</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="alert alert-dark">
+                    <h1 id="titleRP">REGISTRAR EVENTO</h1>
+                </div>
+                <form id="address-form" action="#">
+                    <div class="row mb-3">
+                        <div class="form-floating">
+                            <label for="re-nome-e"><span class="obrigatorio">*</span>Digite o nome do Evento</label>
+                            <input class="form-control show-none" type="text" name="re-nome-e" id="re-nome-e" autocomplete="off" minlength="20" maxlength="140" required="required" placeholder="Digite o nome do Evento">
+                        </div>
+                    </div>
+
+                </form>
+                <!-- <p id="infoDados">Dados do Evento</p>
+                <table name="dadosEvento">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div id="re-div-nome-e" class="form-group col-md-15 inputBottom">
+                                    <label for="re-nome-e"><span class="obrigatorio">*</span>Nome do Evento:</label>
+                                    <input class="form-control" type="text" name="re-nome-e" id="re-nome-e" autocomplete="off" maxlength="140" required="required" placeholder="Digite o nome do evento...">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-group col-md-10 inputBottom">
+                                    <label id="RE-dataE-I" for="RE-dataE-I"><span class="obrigatorio">*</span>Data/Horas Início:</label>
+                                    <input class="form-control" type="datetime-local" name="RE-dataE-I" id="RE-dataE-I" maxlength="17" required="required">
+                                </div>
+                            </td>
+                            <td>
+                                <div id="re-data-e-t" class="form-group col-md-10 inputBottom">
+                                    <label id="re-data-e-t" for="re-data-e-t"><span class="obrigatorio">*</span>Data/Horas Termino:</label>
+                                    <input class="form-control" type="datetime-local" name="re-data-e-t" id="re-data-e-t" maxlength="17" required="required">
+                                </div>
+                            </td>
+                            <td>
+                                <div id="re-div-des-e" class="form-group col-md-10 inputBottom">
+                                    <label for="re-des-e">Descrição do Evento:</label>
+                                    <textarea class="form-control" name="re-des-e" id="re-des-e" cols="50" rows="4" minlength="20" maxlength="300"></textarea>
+                                    <p id="info"><span class="obrigatorio">⚠️</span>(Obs.: mínimo de 20 caracteres, máximo 300)</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <p id="infoDados">Endereço</p>
+                <table nome="dadosEendereco">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="form-group col-md-10 inputBottom">
+                                    <label for="re-cep-e"><span class="obrigatorio">*</span>CEP:</label>
+                                    <input class="form-control" type="text" name="re-cep-e" id="re-cep-e" autocomplete="off" maxlength="9" required="required" placeholder="Digite o CEP...">
+                                </div>
+                            </td>
+                            <td>
+                                <div id="re-div-logra-e" class="form-group col-md-10 inputBottom">
+                                    <label for="re-logra-e"><span class="obrigatorio">*</span>Logradouro:</label>
+                                    <input class="form-control" type="text" name="re-logra-e" id="re-logra-e" autocomplete="off" maxlength="140" required="required" placeholder="Digite o logradouro...">
+                                    <p id="info"><span class="obrigatorio">⚠️</span>(Logradouro: rua, avenida, etc)</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="re-num-e" class="form-group col-md-10 inputBottom">
+                                    <label for="re-num-e"><span class="obrigatorio">*</span>Número:</label>
+                                    <input class="form-control" type="text" name="re-num-e" id="re-num-e" autocomplete="off" maxlength="5" required="required" placeholder="Digite o número...">
+                                </div>
+                            </td>
+                            <td>
+                                <div id="re-div-bairro-e"class="form-group col-md-10 inputBottom">
+                                <label for="re-bairro-e"><span class="obrigatorio">*</span>Bairro:</label>
+                                <input class="form-control" type="text" name="re-bairro-e" id="re-bairro-e" autocomplete="off" maxlength="140" required="required" placeholder="Digite o bairro...">
+                            </div>                                            
+                        </td>
+                            <td>
+                                <div id="re-div-com-e" class="form-group col-md-10 inputBottom">
+                                    <label for="re-com-e">Complemento:</label>
+                                    <textarea class="form-control" name="re-com-e" id="re-com-e" cols="40" rows="3" minlength="20" maxlength="300"></textarea>
+                                    <p id="info"><span class="obrigatorio">⚠️</span>(Descrição do imóvel, pontos de referência, etc. <br> Obs.: mínimo de 20 caracteres, máximo 300)</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div name="estado" class="form-group col-md-10 inputBottom">
+                                    <label for="uf" class="form-label"><span class="obrigatorio">*</span>Estado:</label>
+                                    <input class="form-control" list="datalistOptionsNUF" name="uf" id="uf" required="required" onChange="selectUF()" placeholder="Digite o estado...">
+                                    <datalist id="datalistOptionsNUF">
+                                        <option id="opp01" value="AC">AC - Acre</option>
+                                        <option id="opp02" value="AL">AL - Alagoas</option>
+                                        <option id="opp03" value="AP">AP - Amapá</option>
+                                        <option id="opp04" value="AM">AM - Amazonas</option>
+                                        <option id="opp05" value="BA">BA - Bahia</option>
+                                        <option id="opp06" value="CE">CE - Ceará</option>
+                                        <option id="opp07" value="DF">DF - Distrito Federal</option>
+                                        <option id="opp08" value="ES">ES - Espírito Santo</option>
+                                        <option id="opp09" value="GO">GO - Goiás</option>
+                                        <option id="opp10" value="MA">MA - Maranhão</option>
+                                        <option id="opp11" value="MT">MT - Mato Grosso</option>
+                                        <option id="opp12" value="MS">MS - Mato Grosso do Sul</option>
+                                        <option id="opp13" value="MG">MG - Minas Gerais</option>
+                                        <option id="opp14" value="PA">PA - Pará</option>
+                                        <option id="opp15" value="PB">PB - Paraíba</option>
+                                        <option id="opp16" value="PR">PR - Paraná</option>
+                                        <option id="opp17" value="PE">PE - Pernambuco</option>
+                                        <option id="opp18" value="PI">PI - Piauí</option>
+                                        <option id="opp19" value="RJ">RJ - Rio de Janeiro</option>
+                                        <option id="opp20" value="RN">RN - Rio Grande do Norte</option>
+                                        <option id="opp21" value="RS">RS - Rio Grande do Sul</option>
+                                        <option id="opp22" value="RO">RO - Rondônia</option>
+                                        <option id="opp23" value="RR">RR - Roraima</option>
+                                        <option id="opp24" value="SC">SC - Santa Catarina</option>
+                                        <option id="opp25" value="SP">SP - São Paulo</option>
+                                        <option id="opp26" value="SE">SE - Sergipe</option>
+                                        <option id="opp27" value="TO">TO - Tocantins</option>
+                                    </datalist>
+                                </div>
+                            </td>
+                            <td>
+                                <div name="cidade" class="form-group col-md-15 inputBottom">
+                                    <label for="cidade" class="form-label"><span class="obrigatorio">*</span>Cidade:</label>
+                                    <input class="form-control" type="text" name="cidade" id="cidade" required="required" placeholder="Digite a cidade...">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> -->
+        </div>
+    </div>
+</body>
+</html>

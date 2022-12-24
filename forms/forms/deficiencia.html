@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta nam content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Geral - CPB</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div nome="menuLateral" id="divEsquerda" class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h2>PESSOA</h2>
+                        <div id="menuLateral">
+                            <a href="../forms/documentos.html"><p>Documentos</p></a>
+                            <a href="../forms/dadosPessoais.html"><p>Dados Pessoais</p></a>
+                            <a href="../forms/dadosProfissionais.html"><p>Dados Profissionais</p></a>
+                            <a href="../forms/deficiencia.html"><p>Deficiência</p></a>
+                            <a href="../forms/dadosContato.html"><p>Dados de Contato</p></a>
+                            <a href="../forms/dadosBancarios.html"><p>Dados Bancários</p></a>
+                            <a href="../forms/dependentes.html"><p>Dependentes</p></a>
+                            <a href="../forms/passaporte.html"><p>Passaporte</p></a>
+                            <a href="../forms/vistos.html"><p>Vistos</p></a>
+                            <a href="../forms/uniformes.html"><p>Uniformes</p></a>
+                            <a href="../forms/equipamentos.html"><p>Equipamentos</p></a>
+                            <a href="../forms/classificacoes.html"><p>Classificações</p></a>
+                            <a href="../forms/esportivas.html"><p>Esportivas</p></a>
+                            <a href="../forms/dadosComplementares.html"><p>Dados Complementares</p></a>
+                            <a href="../forms/ocorrencias.html"><p>Ocorrências</p></a>
+                            <a href="../forms/anexos.html"><p>Anexos</p></a>
+                            <a href="../forms/resumo.html"><p>Resumo</p></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="divDireita" class="col-9">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- <div class="alert alert-success">
+                            <h6 class="alert-heading"><i class="bi bi-info-circle"></i>Teste icon</h6>
+                            Dados salvos com sucesso!
+                        </div> -->
+                        <div id ="title-form" class="alert alert-dark" role="alert">
+                            Deficiência
+                        </div>
+                        <form action="#" method="">
+                            <div class="form-group">
+                                <label for="opDeficiente">Deficiente:</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefaultDEF" id="flexRadioDefault1DEF">
+                                    <label class="form-check-label" for="flexRadioDefault1DEF">
+                                        Sim
+                                    </label>
+                                </div>
+                                <div class="form-check inputBottom">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefaultDEF" id="flexRadioDefault2DEF" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2DEF">
+                                        Não
+                                    </label>
+                                </div>
+                            </div>
+                            <table id="D-table">
+                                <!-- <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="form-group">
+                                                <label for="opDeficiente">Deficiente:</label>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefaultDEF" id="flexRadioDefault1DEF">
+                                                    <label class="form-check-label" for="flexRadioDefault1DEF">
+                                                        Sim
+                                                    </label>
+                                                </div>
+                                                <div class="form-check inputBottom">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefaultDEF" id="flexRadioDefault2DEF" checked>
+                                                    <label class="form-check-label" for="flexRadioDefault2DEF">
+                                                        Não
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr> -->
+                                    <tr>
+                                        <td>
+                                            <div name="DEF-deficiencia" class="form-group col-md-15 inputBottom">
+                                                <label for="DEF-deficiencia">Defeciência:</label>
+                                                <input class="form-control" list="datalistOptionsDPR-funcao" name="DEF-deficiencia" id="DEF-deficiencia" placeholder="Selecione a deficiência...">
+                                                <datalist id="datalistOptionsDPR-funcao">
+                                                    <option value="FÍSICA">
+                                                    <option value="VISUAL">
+                                                    <option value="AUDITIVA">
+                                                    <option value="INTELECTUAL">
+                                                    <option value="PSICOSSOCIAL">
+                                                    <option value="MÚLTIPLA">
+                                                </datalist>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-group">
+                                                <label for="opDeficiente">Utiliza cão guia?</label>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefaultDEF2" id="flexRadioDefault1DEF2">
+                                                    <label class="form-check-label" for="flexRadioDefault1DEF2">
+                                                        Sim
+                                                    </label>
+                                                </div>
+                                                <div class="form-check inputBottom">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefaultDEF2" id="flexRadioDefault2DEF2" checked>
+                                                    <label class="form-check-label" for="flexRadioDefault2DEF2">
+                                                        Não
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-group">
+                                                <label for="opDeficiente">Utiliza cadeira de rodas?</label>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefaultDEF3" id="flexRadioDefault1DEF3">
+                                                    <label class="form-check-label" for="flexRadioDefault1DEF3">
+                                                        Sim
+                                                    </label>
+                                                </div>
+                                                <div class="form-check inputBottom">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefaultDEF3" id="flexRadioDefault2DEF3" checked>
+                                                    <label class="form-check-label" for="flexRadioDefault2DEF3">
+                                                        Não
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div id="nA" class="form-group">
+                                                <label for="opDeficiente">Necessita acompanhante?</label>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefaultDEF4" id="flexRadioDefault1DEF4">
+                                                    <label class="form-check-label" for="flexRadioDefault1DEF4">
+                                                        Sim
+                                                    </label>
+                                                </div>
+                                                <div class="form-check inputBottom">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefaultDEF4" id="flexRadioDefault2DEF4" checked>
+                                                    <label class="form-check-label" for="flexRadioDefault2DEF4">
+                                                        Não
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="form-group text-center inputBottom">
+                                <hr>
+                                <button type="button" class="btn btn-warning">Anterior</button>
+                                <button type="submit" class="btn btn-primary col-md-2 p-2">Salvar</button>
+                                <button type="button" class="btn btn-danger">Cancelar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jQuery.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
+    <!-- <script src="../js/funShowDiv.js"></script> -->
+</body>
+</html>

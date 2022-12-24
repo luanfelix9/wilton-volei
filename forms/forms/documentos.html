@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Geral - CPB</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div nome="menuLateral" id="divEsquerda" class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h2>PESSOA</h2>
+                        <div id="menuLateral">
+                            <a href="../forms/documentos.html"><p>Documentos</p></a>
+                            <a href="../forms/dadosPessoais.html"><p>Dados Pessoais</p></a>
+                            <a href="../forms/dadosProfissionais.html"><p>Dados Profissionais</p></a>
+                            <a href="../forms/deficiencia.html"><p>Deficiência</p></a>
+                            <a href="../forms/dadosContato.html"><p>Dados de Contato</p></a>
+                            <a href="../forms/dadosBancarios.html"><p>Dados Bancários</p></a>
+                            <a href="../forms/dependentes.html"><p>Dependentes</p></a>
+                            <a href="../forms/passaporte.html"><p>Passaporte</p></a>
+                            <a href="../forms/vistos.html"><p>Vistos</p></a>
+                            <a href="../forms/uniformes.html"><p>Uniformes</p></a>
+                            <a href="../forms/equipamentos.html"><p>Equipamentos</p></a>
+                            <a href="../forms/classificacoes.html"><p>Classificações</p></a>
+                            <a href="../forms/esportivas.html"><p>Esportivas</p></a>
+                            <a href="../forms/dadosComplementares.html"><p>Dados Complementares</p></a>
+                            <a href="../forms/ocorrencias.html"><p>Ocorrências</p></a>
+                            <a href="../forms/anexos.html"><p>Anexos</p></a>
+                            <a href="../forms/resumo.html"><p>Resumo</p></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="divDireita" class="col-9">
+                <div class="card">
+                    <div class="card-body">
+                        <div id ="title-form" class="alert alert-dark" role="alert">
+                            Documentos
+                        </div>
+                        <form id="form-doc" action="#" method="">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="form-group">
+                                                <label for="opEstrangeiro"><span class="obrigatorio">*</span>Estrangeiro:</label>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="Sim">
+                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                        Sim
+                                                    </label>
+                                                </div>
+                                                <div class="form-check inputBottom">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="Não"checked>
+                                                    <label class="form-check-label" for="flexRadioDefault2">
+                                                        Não
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-group col-md-10 inputBottom">
+                                                <label for="doc-cpf"><span class="obrigatorio">*</span>CPF:</label>
+                                                <input class="form-control" type="text" name="doc-cpf" id="doc-cpf" required="required" id="cpf" autocomplete="off" maxlength="14" placeholder="Digite seu CPF...">
+                                            </div>                 
+                                        </td>
+                                        <td>
+                                            <div id="doc-rg" class="form-group col-md-10 inputBottom">
+                                                <label  for="doc-rg"><span class="obrigatorio">*</span>RG:</label>
+                                                <input class="form-control" type="text" name="doc-rg" required="required" id="doc-rg" autocomplete="off" maxlength="10" placeholder="Digite seu RG...">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div name="orgaoExpeditor" class="form-group col-md-15 inputBottom">
+                                                <label id="doc-oe" for="doc-oe"><span class="obrigatorio">*</span>Órgão Expeditor:</label>
+                                                <input class="form-control" list="datalistOptionsOE" name="doc-oe" id="doc-oe" required="required" placeholder="Selecione o Órgão Expeditor...">
+                                                <datalist id="datalistOptionsOE">
+                                                    <option value="ABNC">ABNC – Academia Brasileira de Neurocirurgia</option>
+                                                    <option value="CGPI/DUREX/DPF">CGPI/DUREX/DPF – Coordenação Geral de Polícia de Imigração da Polícia Federal</option>
+                                                    <option value="CGPI">CGPI – Coordenação Geral de Privilégios e Imunidades</option>
+                                                    <option value="CGPMAF">CGPMAF – Coordenadoria Geral de Polícia Marítima, Aeronáutica e de Fronteiras</option>
+                                                    <option value="CNIG">CNIG – Conselho Nacional de Imigração</option>
+                                                    <option value="COREN">COREN – Conselho Regional de Enfermagem</option>
+                                                    <option value="CRA">CRA – Conselho Regional de Administração</option>
+                                                    <option value="CRAS">CRAS – Conselho Regional de Assistentes Sociais</option>
+                                                    <option value="CRB">CRB – Conselho Regional de Biblioteconomia</option>
+                                                    <option value="CRC">CRC – Conselho Regional de Contabilidade</option>
+                                                    <option value="CRE">CRE – Conselho Regional de Estatística</option>
+                                                    <option value="CREA">CREA – Conselho Regional de Engenharia, Arquitetura e Agronomia</option>
+                                                    <option value="CRECI">CRECI – Conselho Regional de Corretores de Imóveis</option>
+                                                    <option value="CREFIT">CREFIT – Conselho Regional de Fisioterapia e Terapia Ocupacional</option>
+                                                    <option value="CRF">CRF – Conselho Regional de Farmácia</option>
+                                                    <option value="CRM">CRM – Conselho Regional de Medicina</option>
+                                                    <option value="CRN">CRN – Conselho Regional de Nutrição</option>
+                                                    <option value="CRO">CRO – Conselho Regional de Odontologia</option>
+                                                    <option value="CRP">CRP – Conselho Regional de Psicologia</option>
+                                                    <option value="CRPRE">CRPRE – Conselho Regional de Profissionais de Relações Públicas</option>
+                                                    <option value="CRQ ">CRQ – Conselho Regional de Química</option>
+                                                    <option value="CRRC">CRRC – Conselho Regional de Representantes Comerciais</option>
+                                                    <option value="CRMV">CRMV – Conselho Regional de Medicina Veterinária</option>
+                                                    <option value="DIC">DIC – Diretoria de Identificação Civil</option>
+                                                    <option value="DIREX">DIREX – Diretoria Executiva</option>
+                                                    <option value="DPMAF">DPMAF – Divisão de Polícia Marítima, Área e de Fronteiras</option>
+                                                    <option value="DPT">DPT – Departamento de Polícia Técnica Geral</option>
+                                                    <option value="IGP">IGP – Instituto Geral de Perícias</option>
+                                                    <option value="IML">IML – Instituto Médico-Legal</option>
+                                                    <option value="MAE">MAE – Ministério da Aeronáutica</option>
+                                                    <option value="MEX">MEX – Ministério do Exército</option>
+                                                    <option value="MMA">MMA – Ministério da Marinha</option>
+                                                    <option value="OAB">OAB – Ordem dos Advogados do Brasil</option>
+                                                    <option value="POF">POF ou DPF – Polícia Federal</option>
+                                                    <option value="POM">POM – Polícia Militar</option>
+                                                    <option value="SNJ">SNJ – Secretaria Nacional de Justiça / Departamento de Estrangeiros</option>
+                                                    <option value="SECC">SECC – Secretaria de Estado da Casa Civil</option>
+                                                    <option value="SEJUSP">SEJUSP – Secretaria de Estado de Justiça e Segurança Pública</option>
+                                                    <option value="SES/EST">SES ou EST – Carteira de Estrangeiro</option>
+                                                    <option value="SSP/SESP">SSP/SESP – Secretaria de Estado da Segurança Pública</option>
+                                                    <option value="SJS">SJS – Secretaria da Justiça e Segurança</option>
+                                                    <option value="SJTC">SJTC – Secretaria da Justiça do Trabalho e Cidadania</option>
+                                                    <option value="SPTC">SPTC – Secretaria de Polícia Técnico-Científica</option>
+                                                </datalist>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div name="unidadeFederativa" class="form-group col-md-10 inputBottom">
+                                                <label for="uf" class="form-label"><span class="obrigatorio">*</span>UF:</label>
+                                                <input class="form-control" list="datalistOptionsUF" name="uf" id="uf" required="required" placeholder="Selecione o estado...">
+                                                <datalist id="datalistOptionsUF">
+                                                    <option value="AC">AC - Acre</option>
+                                                    <option value="AL">AL - Alagoas</option>
+                                                    <option value="AP">AP - Amapá</option>
+                                                    <option value="AM">AM - Amazonas</option>
+                                                    <option value="BA">BA - Bahia</option>
+                                                    <option value="CE">CE - Ceará</option>
+                                                    <option value="DF">DF - Distrito Federal</option>
+                                                    <option value="ES">ES - Espírito Santo</option>
+                                                    <option value="GO">GO - Goiás</option>
+                                                    <option value="MA">MA - Maranhão</option>
+                                                    <option value="MT">MT - Mato Grosso</option>
+                                                    <option value="MS">MS - Mato Grosso do Sul</option>
+                                                    <option value="MG">MG - Minas Gerais</option>
+                                                    <option value="PA">PA - Pará</option>
+                                                    <option value="PB">PB - Paraíba</option>
+                                                    <option value="PR">PR - Paraná</option>
+                                                    <option value="PE">PE - Pernambuco</option>
+                                                    <option value="PI">PI - Piauí</option>
+                                                    <option value="RJ">RJ - Rio de Janeiro</option>
+                                                    <option value="RN">RN - Rio Grande do Norte</option>
+                                                    <option value="RS">RS - Rio Grande do Sul</option>
+                                                    <option value="RO">RO - Rondônia</option>
+                                                    <option value="RR">RR - Roraima</option>
+                                                    <option value="SC">SC - Santa Catarina</option>
+                                                    <option value="SP">SP - São Paulo</option>
+                                                    <option value="SE">SE - Sergipe</option>
+                                                    <option value="TO">TO - Tocantins</option>
+                                                </datalist>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div id="doc-data" class="form-group col-md-12 inputBottom">
+                                                <label  for="doc-data"><span class="obrigatorio">*</span>Data de Emissão:</label>
+                                                <input class="form-control" type="date" name="doc-data" id="doc-data" required="required">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="form-group text-center inputBottom">
+                                <hr>
+                                <button type="submit" class="btn btn-primary col-md-2 p-2">Salvar</button>
+                                <button type="button" class="btn btn-danger">Cancelar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jQuery.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
+    <script src="../js/mask.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+/* ******************************************************************************************************************* */
+/* ******************************************************* CSS ALL PAGE  ********************************************* */
+/* ******************************************************************************************************************* */
+body{
+    background: #CBD9EA;
+    font-family: sans-serif;
+}
+
+.container{
+    margin-top: 5%; 
+    border-radius: 1rem;
+}
+
+h1#titleRP{
+    color: black;
+    text-align: center;
+}
+
+p#infoDados{
+    font-size: 19px;
+    color: black;
+    background: rgba(63, 62, 62, 0.336);
+}
+
+.obrigatorio{
+    color: red;
+}
+
+.inputBottom{
+    margin-bottom: 15px;
+}
+
+.card{
+    box-shadow: 3px 6px 8px 3px rgba(10, 10, 10, 0.5);
+}
+
+/* ******************************************************************************************************************* */
+/* ******************************************************* CSS PAGE DOC ********************************************** */
+/* ******************************************************************************************************************* */
+input#doc-oe{
+    width: 150%;
+}
+
+/* **************************************************************************************************************************** */
+/* ******************************************************* CSS FOTO 5x7 ******************************************************* */
+/* **************************************************************************************************************************** */
+.picture__input{
+    display: none ;
+}
+
+.picture{
+    width: 140px;
+    aspect-ratio: 5/7;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    border: 2px dashed currentColor;
+    cursor: pointer;
+}
+
+.picture:hover{
+    color: #777; 
+    background: #CCC;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+}
+
+.picture-btn{
+    padding: 10px 10px;
+    width: 120px;
+    background: #0d6efd;
+    color: #fff;
+    border-color: #0d6efd;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.picture-btn:hover{
+    color: #fff;
+    background: #0b5ed7;
+    border-color: #0a58ca;
+    -moz-window-dragging: 49,132,253;
+    
+}
+
+/* ******************************************************************************************************************* */
+/* *********************************************** CSS PAGE DADOS PSSOAIS ******************************************** */
+/* ******************************************************************************************************************* */
+input#dp-nome{
+    width: 200%;
+}
+
+input#dp-email{
+    width: 150%;
+}
+
+div#dp-opGenero{
+    margin-left: 50%;
+}
+
+div#dp-eCivil{
+    margin-left: 50%;
+}
+
+input#cidade{
+    width: 150%;
+}
+
+input#dp-nomeM{
+    width: 200%;
+}
+
+input#dp-nomeP{
+    width: 200%;
+}
+
+/* ******************************************************************************************************************* */
+/* *********************************************** CSS PAGE EVENTOS ************************************************** */
+/* ******************************************************************************************************************* */
+div#re-div-nome-e{
+    width: 250%;
+}
+
+div#re-data-e-i{
+    width: 100%;
+}
+
+div#re-data-e-t{
+    margin-left: 100%;
+}
+
+div#re-div-des-e{
+    margin-left: 100%;
+}
+
+textarea#re-des-e{
+    resize: none;
+}
+
+textarea#re-des-e:invalid{
+    border: 2px solid red;
+}
+
+div#re-div-logra-e{
+    width: 200%;
+    margin-left: 50%;
+}
+
+div#re-div-bairro-e{
+    width: 200%;
+}
+
+div#re-div-com-e{
+    margin-left: 100%;
+}
+
+textarea#re-com-e{
+    resize: none;
+}
+
+textarea#re-com-e:invalid{
+    border: 2px solid red;
+}
+
+
+
+
+
+
+
+/* ******************************************************************************************************************* */
+/* *********************************************** CSS FADE ************************************************** */
+/* ******************************************************************************************************************* */
+#fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+#fade .spinner-border {
+    width: 60px;
+    height: 60px;
+}
+
+.hide{
+    display: none !important;
+}
+
+#messa{
+    width: 40%;
+}
+
+.alert.alert-light p{
+    border-bottom: 1px solid #333;
+    padding: 1.2em 0;
+}

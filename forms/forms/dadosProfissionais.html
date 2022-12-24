@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Geral - CPB</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="../css/style.css">    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="divEsquerda" class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h2>PESSOA</h2>
+                        <div id="menuLateral">
+                            <a href="../forms/documentos.html"><p>Documentos</p></a>
+                            <a href="../forms/dadosPessoais.html"><p>Dados Pessoais</p></a>
+                            <a href="../forms/dadosProfissionais.html"><p>Dados Profissionais</p></a>
+                            <a href="../forms/deficiencia.html"><p>Deficiência</p></a>
+                            <a href="../forms/dadosContato.html"><p>Dados de Contato</p></a>
+                            <a href="../forms/dadosBancarios.html"><p>Dados Bancários</p></a>
+                            <a href="../forms/dependentes.html"><p>Dependentes</p></a>
+                            <a href="../forms/passaporte.html"><p>Passaporte</p></a>
+                            <a href="../forms/vistos.html"><p>Vistos</p></a>
+                            <a href="../forms/uniformes.html"><p>Uniformes</p></a>
+                            <a href="../forms/equipamentos.html"><p>Equipamentos</p></a>
+                            <a href="../forms/classificacoes.html"><p>Classificações</p></a>
+                            <a href="../forms/esportivas.html"><p>Esportivas</p></a>
+                            <a href="../forms/dadosComplementares.html"><p>Dados Complementares</p></a>
+                            <a href="../forms/ocorrencias.html"><p>Ocorrências</p></a>
+                            <a href="../forms/anexos.html"><p>Anexos</p></a>
+                            <a href="../forms/resumo.html"><p>Resumo</p></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="divDireita" class="col-xl-9">
+                <!-- <div class="alert alert-primary">
+                    Dados salvos com sucesso!
+                </div> -->
+                <div class="card">
+                    <div class="card-body">
+                        <div id ="title-form" class="alert alert-dark" role="alert">
+                            Dados Profissionais
+                        </div>
+                        <form action="#">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div name="DPR-funcao" class="form-group col-md-15 inputBottom">
+                                                <label for="DPR-funcao"><span class="obrigatorio">*</span>Função:</label>
+                                                <input class="form-control" list="datalistOptionsDPR-funcao" name="DPR-funcao" id="DPR-funcao" required="required" placeholder="Selecione a função...">
+                                                <datalist id="datalistOptionsDPR-funcao">
+                                                    <option value="ATLETA">
+                                                    <option value="TREINADOR">
+                                                    <!-- <option value="">
+                                                    <option value="">
+                                                    <option value=""> -->
+                                                </datalist>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-group col-md-15 inputBottom">
+                                                <label for="DPR-club"><span class="obrigatorio">*</span>Clube:</label>
+                                                <input class="form-control" type="text" name="DPR-club" id="DPR-club" autocomplete="off" maxlength="200" required="required" readonly>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-group col-md-15 inputBottom">
+                                                <label for="DPR-conf">Confederação:</label>
+                                                <input class="form-control" type="text" name="DPR-conf" id="DPR-conf" autocomplete="off" maxlength="200" readonly>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div name="DPR-formacaoACAD" class="form-group col-md-12 inputBottom">
+                                                <label for="formacaoACAD">Formação Acadêmica:</label>
+                                                <input class="form-control" list="datalistOptionsACAD" name="formacaoACAD" id="formacaoACAD" placeholder="Selecione a formação...">
+                                                <datalist id="datalistOptionsACAD">
+                                                    <option value="ENSINO FUNDAMENTAL INCOMPLETO">
+                                                    <option value="ENSINO FUNDAMENTAL COMPLETO">
+                                                    <option value="ENSINO MÉDIO INCOMPLETO">
+                                                    <option value="ENSINO MÉDIO COMPLETO">
+                                                    <option value="ENSINO SUPERIOR INCOMPLETO">
+                                                    <option value="ENSINO SUPERIOR COMPLETO">
+                                                </datalist>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-group col-md-15 inputBottom">
+                                                <label for="DPR-pis">PIS:</label>
+                                                <input class="form-control" type="text" name="DPR-pis" id="DPR-pis" autocomplete="off" maxlength="15" placeholder="Digite o PIS/NIT...">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-group col-md-15 inputBottom">
+                                                <label for="DPR-rp">Registro Profissional:</label>
+                                                <input class="form-control" type="text" name="DPR-rp" id="DPR-rp" autocomplete="off" maxlength="50" placeholder="Digite o registro profissional...">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-group col-md-15 inputBottom">
+                                                <label for="DPR-ia">Inscrição Autônomo:</label>
+                                                <input class="form-control" type="text" name="DPR-ia" id="DPR-ia" autocomplete="off" maxlength="50" placeholder="Digite a inscrição...">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-group col-md-15 inputBottom">
+                                                <label for="DPR-SDMS">SDMS/Registro Federação Internacional:</label>
+                                                <input class="form-control" type="text" name="DPR-SDMS" id="DPR-SDMS" autocomplete="off" maxlength="50" placeholder="Digite o registro..">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div name="DPR-treinador" class="form-group col-md-15 inputBottom">
+                                                <label for="DPR-treinador">Treinador:</label>
+                                                <input class="form-control" list="datalistOptionsDPR-treinador" name="DPR-treinador" id="DPR-treinador" placeholder="Selecione o treinador...">
+                                                <datalist id="datalistOptionsDPR-treinador">
+                                                    <option value="Treinador01">
+                                                    <option value="Treinador02">
+                                                    <!-- <option value="">
+                                                    <option value="">
+                                                    <option value=""> -->
+                                                </datalist>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div name="DPR-mod" class="form-group col-md-15 inputBottom">
+                                                <label for="DPR-mod"><span class="obrigatorio">*</span>Modalidade:</label>
+                                                <input class="form-control" list="datalistOptionsDPR-mod" name="DPR-mod" id="DPR-mod" required="required" placeholder="Selecione a modalidade...">
+                                                <datalist id="datalistOptionsDPR-mod">
+                                                    <option value="ATLETISMO">
+                                                    <option value="Modalidade02">
+                                                    <!-- <option value="">
+                                                    <option value="">
+                                                    <option value="">
+                                                    <option value=""> -->
+                                                </datalist>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-group col-md-4 inputBottom">
+                                                <label for="DPR-alt">Altura (m):</label>
+                                                <input class="form-control" type="text" name="DPR-alt" id="DPR-alt" autocomplete="off" maxlength="4" placeholder="Ex.: 1,49"
+                                                >
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-group col-md-5 inputBottom">
+                                                <label for="DPR-peso">Peso (kg):</label>
+                                                <input class="form-control" type="text" name="DPR-peso" id="DPR-peso" autocomplete="off" maxlength="7" placeholder="Ex.: 97,000">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="form-group text-center inputBottom">
+                                <hr>
+                                <button type="button" class="btn btn-warning">Anterior</button>
+                                <button type="submit" class="btn btn-primary col-md-2 p-2">Salvar</button>
+                                <button type="button" class="btn btn-danger">Cancelar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+</body>
+</html>

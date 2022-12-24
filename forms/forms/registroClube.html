@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Geral - CPB</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="../css/style.css">    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div nome="infoLateral" id="divEsquerda" class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <p id="infoLateral"><span class="obrigatorio">⚠️ </span>ATENÇÃO!</p>
+
+                        <p>Além do preenchimento do formulário, é necessário enviar cópia de documentação do clube. Após aprovação do cadastro, login e senha serão enviados para os e-mails cadastrados.</p>
+                        
+                                        <p><b>Documentação jurídica exigida:</b></p>
+                                        <ul>
+                                            <li>Cópia simples do Estatuto do clube/associação;</li>
+                                            <li>Cópia simples da Ata de Fundação do clube/associação;</li>
+                                            <li>Cópia simples da Ata de eleição e posse da atual diretoria;</li>
+                                            <li>Cópia do CNPJ da entidade disponível no site</li>
+                                            <li>Cópia do CNPJ da entidade disponível no site <a href="https://www.receita.fazenda.gov.br">www.receita.fazenda.gov.br;</a></li>
+                        
+                                        </ul>
+                        
+                                        <p><b>Endereço para envio da documentação:</b></p>
+                                        <p>Comitê Paralímpico Brasileiro</p>
+                                        <p>Rodovia dos Imigrantes, km 11,5</p>
+                                        <p>Vila Guarani, Jabaquara São Paulo/SP</p>
+                                        <p>CEP: 04.329-000</p>
+                                        <p>Tel: +55 11 3390-3702</p>
+                    </div>
+                </div>
+            </div>
+            <div id="divDireita" class="col-9">
+                <div nome="rClube" id="rClube">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 id="titleRC">REGISTRAR CLUBE</h1>
+                            <form action="#">
+                                <div class="alert alert-dark" role="alert">
+                                    Dados do Clube
+                                </div>
+                                <p id="infoDados">Contato</p>
+                                <table name="dadosContato">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="form-group col-md-15 inputBottom">
+                                                    <label for="nomeRC"><span class="obrigatorio">*</span>Nome Completo:</label>
+                                                    <input class="form-control" type="text" name="nomeRC" id="nomeRC" autocomplete="off" maxlength="140" required="required" placeholder="Digite o nome completo...">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="siglaRC" class="form-group col-md-10 inputBottom">
+                                                    <label for="siglaRC"><span class="obrigatorio">*</span>Sigla:</label>
+                                                    <input class="form-control" type="text" name="siglaRC" id="siglaRC" autocomplete="off" maxlength="10" required="required" placeholder="Digite a sigla...">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-group inputBottom">
+                                                    <label for="emailRC"><span class="obrigatorio">*</span>E-mail:</label>
+                                                    <input class="form-control" type="email" name="emailRC" id="emailRC" autocomplete="off" maxlength="140" required="required" placeholder="Digite o e-mail...">
+                                                    <p id="info"><span class="obrigatorio">⚠️</span>(Seu Login e Senha serão enviados para este e-mail)</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="dataF" class="form-group col-md-3 inputBottom">
+                                                    <label id="dataF" for="dataF"><span class="obrigatorio">*</span>Data de Fundação:</label>
+                                                    <input class="form-control" type="date" name="dataF" id="dataF" maxlength="10" required="required">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-group col-md-8 inputBottom">
+                                                    <label for="cnpjRC"><span class="obrigatorio">*</span>CNPJ:</label>
+                                                    <input class="form-control" type="text" name="cnpjRC" id="cnpjRC" autocomplete="off" maxlength="18" required="required" placeholder="Digite o CNPJ...">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="siteRC" class="form-group col-md-6 inputBottom">
+                                                    <label for="siteRC">Site:</label>
+                                                    <input class="form-control" type="text" name="siteRC" id="siteRC" autocomplete="off" maxlength="140" placeholder="Digite o site...">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-group col-md-7 inputBottom">
+                                                    <label for="foneRC"><span class="obrigatorio">*</span>Telefone:</label>
+                                                    <input class="form-control" type="text" name="foneRC" id="foneRC" autocomplete="off" maxlength="14" required="required" placeholder="Digite o número...">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="div-cellRC" class="form-group col-md-10 inputBottom">
+                                                    <label for="cellRC"><span class="obrigatorio">*</span>Celular:</label>
+                                                    <input class="form-control" type="text" name="cellRC" id="cellRC" autocomplete="off" maxlength="15" required="required" placeholder="Digite o número...">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br>
+                                <p id="infoDados">Endereço</p>
+                                <table nome="dadosEendereco">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="form-group col-md-10 inputBottom">
+                                                    <label for="cepRC"><span class="obrigatorio">*</span>CEP:</label>
+                                                    <input class="form-control" type="text" name="cepRC" id="cepRC" autocomplete="off" maxlength="9" required="required" placeholder="Digite o CEP...">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-group col-md-10 inputBottom">
+                                                    <label for="lograRC"><span class="obrigatorio">*</span>Logradouro:</label>
+                                                    <input class="form-control" type="text" name="lograRC" id="lograRC" autocomplete="off" maxlength="140" required="required" placeholder="Digite o logradouro...">
+                                                    <p id="info"><span class="obrigatorio">⚠️</span>(Logradouro: rua, avenida, etc)</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="nRC" class="form-group col-md-10 inputBottom">
+                                                    <label for="nRC"><span class="obrigatorio">*</span>Número:</label>
+                                                    <input class="form-control" type="text" name="nRC" id="nRC" autocomplete="off" maxlength="5" required="required" placeholder="Digite o número...">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-group col-md-10 inputBottom">
+                                                <label for="bairroRC"><span class="obrigatorio">*</span>Bairro:</label>
+                                                <input class="form-control" type="text" name="bairroRC" id="bairroRC" autocomplete="off" maxlength="140" required="required" placeholder="Digite o bairro...">
+                                            </div>                                            
+                                            </td>
+                                            <td>
+                                                <div id="comRC" class="form-group col-md-10 inputBottom">
+                                                    <label for="nRC">Complemento:</label>
+                                                    <textarea class="form-control" name="comRC" id="comRC" cols="40" rows="3" minlength="20" maxlength="300"></textarea>
+                                                    <p id="info"><span class="obrigatorio">⚠️</span>(Descrição do imóvel, pontos de referência, etc. <br> Obs.: mínimo de 20 caracteres, máximo 300)</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div name="estado" class="form-group col-md-10 inputBottom">
+                                                    <label for="uf" class="form-label"><span class="obrigatorio">*</span>Estado:</label>
+                                                    <input class="form-control" list="datalistOptionsNUF" name="uf" id="uf" required="required" onChange="selectUF()" placeholder="Digite o estado...">
+                                                    <datalist id="datalistOptionsNUF">
+                                                        <option id="opp01" value="AC">AC - Acre</option>
+                                                        <option id="opp02" value="AL">AL - Alagoas</option>
+                                                        <option id="opp03" value="AP">AP - Amapá</option>
+                                                        <option id="opp04" value="AM">AM - Amazonas</option>
+                                                        <option id="opp05" value="BA">BA - Bahia</option>
+                                                        <option id="opp06" value="CE">CE - Ceará</option>
+                                                        <option id="opp07" value="DF">DF - Distrito Federal</option>
+                                                        <option id="opp08" value="ES">ES - Espírito Santo</option>
+                                                        <option id="opp09" value="GO">GO - Goiás</option>
+                                                        <option id="opp10" value="MA">MA - Maranhão</option>
+                                                        <option id="opp11" value="MT">MT - Mato Grosso</option>
+                                                        <option id="opp12" value="MS">MS - Mato Grosso do Sul</option>
+                                                        <option id="opp13" value="MG">MG - Minas Gerais</option>
+                                                        <option id="opp14" value="PA">PA - Pará</option>
+                                                        <option id="opp15" value="PB">PB - Paraíba</option>
+                                                        <option id="opp16" value="PR">PR - Paraná</option>
+                                                        <option id="opp17" value="PE">PE - Pernambuco</option>
+                                                        <option id="opp18" value="PI">PI - Piauí</option>
+                                                        <option id="opp19" value="RJ">RJ - Rio de Janeiro</option>
+                                                        <option id="opp20" value="RN">RN - Rio Grande do Norte</option>
+                                                        <option id="opp21" value="RS">RS - Rio Grande do Sul</option>
+                                                        <option id="opp22" value="RO">RO - Rondônia</option>
+                                                        <option id="opp23" value="RR">RR - Roraima</option>
+                                                        <option id="opp24" value="SC">SC - Santa Catarina</option>
+                                                        <option id="opp25" value="SP">SP - São Paulo</option>
+                                                        <option id="opp26" value="SE">SE - Sergipe</option>
+                                                        <option id="opp27" value="TO">TO - Tocantins</option>
+                                                    </datalist>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div name="cidade" class="form-group col-md-10 inputBottom">
+                                                    <label for="cidade" class="form-label"><span class="obrigatorio">*</span>Cidade:</label>
+                                                    <input class="form-control" type="text" name="cidade" id="cidade" required="required" placeholder="Digite a cidade...">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br>
+                                <p id="infoDados">Modalidades</p>
+                                <table nome="dadosModalidades">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck1">
+                                                        ATLETISMO
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="div-checkbox" class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck2">
+                                                        BASQUETE EM CADEIRA DE RODAS
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="div-checkbox" class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck3">
+                                                        BOCHA
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck4">
+                                                        CICLISMO - ROAD
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="div-checkbox"class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck5">
+                                                        CICLISMO - TRACK
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="div-checkbox"class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+                                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck6">
+                                                        ESGRIMA EM CADEIRA DE RODAS
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck7">
+                                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck7">
+                                                        ESQUI CROSS COUNTRY
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="div-checkbox" class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck8">
+                                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck8">
+                                                        FUTEBOL DE 5
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="div-checkbox" class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck9">
+                                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck9">
+                                                        FUTEBOL DE 7
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck10">
+                                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck10">
+                                                        GOALBALL
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="div-checkbox" class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck11">
+                                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck11">
+                                                        HALTEROFILISMO
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="div-checkbox" class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck12">
+                                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck12">
+                                                        HIPISMO
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck13">
+                                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck13">
+                                                        JUDÔ
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="div-checkbox" class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck14">
+                                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck14">
+                                                        NATAÇÃO
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="div-checkbox" class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck15">
+                                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck15">
+                                                        PARACANOAGEM
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck16">
+                                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck16">
+                                                        REMO
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="div-checkbox"class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck17">
+                                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck17">
+                                                        RUGBY EM CADEIRA DE RODAS
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="div-checkbox"class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck18">
+                                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck18">
+                                                        SNOWBOARD
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck19">
+                                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck9">
+                                                        TÊNIS DE MESA
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="div-checkbox" class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck20">
+                                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck20">
+                                                        TÊNIS EM CADEIRA DE RODAS
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="div-checkbox" class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck21">
+                                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck21">
+                                                        TIRO COM ARCO
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck22">
+                                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck22">
+                                                        TIRO ESPORTIVO
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="div-checkbox" class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck23">
+                                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck23">
+                                                        TRIATLO
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="div-checkbox" class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck24">
+                                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck24">
+                                                        VELA ADAPTADA
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck25">
+                                                    <label id="label-checkbox" class="form-check-label" for="defaultCheck25">
+                                                        VOLEIBOL SENTODO
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br>
+                                <p id="infoDados">Dados da Presidencia</p>
+                                <table name="dadosPresidencia">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="form-group col-md-15 inputBottom">
+                                                    <label for="nomePRC"><span class="obrigatorio">*</span>Nome Completo:</label>
+                                                    <input class="form-control" type="text" name="nomePRC" id="nomePRC" autocomplete="off" maxlength="140" required="required" placeholder="Digite o nome completo...">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="div-cpfPRC" class="form-group col-md-9 inputBottom">
+                                                    <label for="cpfPRC"><span class="obrigatorio">*</span>CPF:</label>
+                                                    <input class="form-control" type="text" name="cpfPRC" id="cpfPRC" autocomplete="off" maxlength="14" required="required" placeholder="Digite o CPF...">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-group col-md-15 inputBottom">
+                                                    <label for="emailPRC"><span class="obrigatorio">*</span>E-mail:</label>
+                                                    <input class="form-control" type="email" name="emailPRC" id="emailPRC" autocomplete="off" maxlength="140" required="required" placeholder="Digite o e-mail...">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="div-dataNPRC" class="form-group col-md-3 inputBottom">
+                                                    <label id="dataNPRC" for="dataNPRC">Data de Nascimento:</label>
+                                                    <input class="form-control" type="date" name="dataNPRC" id="dataNPRC" maxlength="10" required="required">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-group col-md-10 inputBottom">
+                                                    <label for="fonePRC">Telefone:</label>
+                                                    <input class="form-control" type="text" name="fonePRC" id="fonePRC" autocomplete="off" maxlength="14" required="required" placeholder="Digite o número...">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="div-cellPRC" class="form-group col-md-10 inputBottom">
+                                                    <label for="cellPRC"><span class="obrigatorio">*</span>Celular:</label>
+                                                    <input class="form-control" type="text" name="cellPRC" id="cellPRC" autocomplete="off" maxlength="15" required="required" placeholder="Digite o número...">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-group col-md-10 inputBottom">
+                                                    <label id="dataIMPRC" for="dataIMPRC"><span class="obrigatorio">*</span>Data de Início de Mandato:</label>
+                                                    <input class="form-control" type="date" name="dataIMPRC" id="dataIMPRC" maxlength="10" required="required">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="div-dataTMPRC" class="form-group col-md-10 inputBottom">
+                                                    <label id="dataTMPRC" for="dataTMPRC"><span class="obrigatorio">*</span>Data de Término de Mandato:</label>
+                                                    <input class="form-control" type="date" name="dataTMPRC" id="dataTMPRC" maxlength="10" required="required">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="div-dataEPRC" class="form-group col-md-10 inputBottom">
+                                                    <label id="dataEPRC" for="dataEPRC"><span class="obrigatorio">*</span>Data de Eleição:</label>
+                                                    <input class="form-control" type="date" name="dataEPRC" id="dataEPRC" maxlength="10" required="required">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br>
+                                <p id="infoDados">Dados do Diretor</p>
+                                <table name="dadosDiretor">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="form-group col-md-15 inputBottom">
+                                                    <label for="nomeDRC"><span class="obrigatorio">*</span>Nome Completo:</label>
+                                                    <input class="form-control" type="text" name="nomeDRC" id="nomeDRC" autocomplete="off" maxlength="140" required="required" placeholder="Digite o nome completo...">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="div-cpfDRC" class="form-group col-md-9 inputBottom">
+                                                    <label for="cpfDRC"><span class="obrigatorio">*</span>CPF:</label>
+                                                    <input class="form-control" type="text" name="cpfDRC" id="cpfDRC" autocomplete="off" maxlength="14" required="required" placeholder="Digite o CPF...">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-group col-md-15 inputBottom">
+                                                    <label for="emailDRC"><span class="obrigatorio">*</span>E-mail:</label>
+                                                    <input class="form-control" type="email" name="emailDRC" id="emailDRC" autocomplete="off" maxlength="140" required="required" placeholder="Digite o e-mail...">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="div-dataNDRC" class="form-group col-md-3 inputBottom">
+                                                    <label id="dataNDRC" for="dataNDRC">Data de Nascimento:</label>
+                                                    <input class="form-control" type="date" name="dataNDRC" id="dataNDRC" maxlength="10" required="required">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-group col-md-10 inputBottom">
+                                                    <label for="foneDRC">Telefone:</label>
+                                                    <input class="form-control" type="text" name="foneDRC" id="foneDRC" autocomplete="off" maxlength="14" required="required" placeholder="Digite o número...">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div id="div-cellDRC" class="form-group col-md-10 inputBottom">
+                                                    <label for="cellDRC"><span class="obrigatorio">*</span>Celular:</label>
+                                                    <input class="form-control" type="text" name="cellDRC" id="cellDRC" autocomplete="off" maxlength="15" required="required" placeholder="Digite o número...">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div id="btn" class="form-group text-center inputBottom">
+                                    <hr>
+                                    <button type="submit" class="btn btn-primary">Registrar</button>
+                                    <button type="button" class="btn btn-danger">Cancelar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jQuery.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
+    <Script src="../js/mask.js"></Script>
+</body>
+</html>

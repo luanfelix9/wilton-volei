@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Geral - CPB</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div nome="menuLateral" id="divEsquerda" class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h2>PESSOA</h2>
+                        <div id="menuLateral">
+                            <a href="../forms/documentos.html"><p>Documentos</p></a>
+                            <a href="../forms/dadosPessoais.html"><p>Dados Pessoais</p></a>
+                            <a href="../forms/dadosProfissionais.html"><p>Dados Profissionais</p></a>
+                            <a href="../forms/deficiencia.html"><p>Deficiência</p></a>
+                            <a href="../forms/dadosContato.html"><p>Dados de Contato</p></a>
+                            <a href="../forms/dadosBancarios.html"><p>Dados Bancários</p></a>
+                            <a href="../forms/dependentes.html"><p>Dependentes</p></a>
+                            <a href="../forms/passaporte.html"><p>Passaporte</p></a>
+                            <a href="../forms/vistos.html"><p>Vistos</p></a>
+                            <a href="../forms/uniformes.html"><p>Uniformes</p></a>
+                            <a href="../forms/equipamentos.html"><p>Equipamentos</p></a>
+                            <a href="../forms/classificacoes.html"><p>Classificações</p></a>
+                            <a href="../forms/esportivas.html"><p>Esportivas</p></a>
+                            <a href="../forms/dadosComplementares.html"><p>Dados Complementares</p></a>
+                            <a href="../forms/ocorrencias.html"><p>Ocorrências</p></a>
+                            <a href="../forms/anexos.html"><p>Anexos</p></a>
+                            <a href="../forms/resumo.html"><p>Resumo</p></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="divDireita" class="col-xl-9">
+                <div class="card">
+                    <div class="card-body">
+                        <div id ="title-form" class="alert alert-dark" role="alert">
+                            Dados de Contato
+                        </div>
+                        <!-- <div class="alert alert-success">
+                            <i class="bi-info-circle"></i>Dados salvos com sucesso!
+                        </div> -->
+                        <form action="#">
+                            <p id="infoDados">Endereço</p>
+                            <table nome="dadosEendereco">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="form-group col-md-10 inputBottom">
+                                                <label for="cepRC"><span class="obrigatorio">*</span>CEP:</label>
+                                                <input class="form-control" type="text" name="cepRC" id="cepRC" autocomplete="off" maxlength="9" required="required" placeholder="Digite o CEP...">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-group col-md-10 inputBottom">
+                                                <label for="lograRC"><span class="obrigatorio">*</span>Logradouro:</label>
+                                                <input class="form-control" type="text" name="lograRC" id="lograRC" autocomplete="off" maxlength="140" required="required" placeholder="Digite o logradouro...">
+                                                <p id="info"><span class="obrigatorio">⚠️</span>(Logradouro: rua, avenida, etc)</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div id="nRC" class="form-group col-md-10 inputBottom">
+                                                <label for="nRC"><span class="obrigatorio">*</span>Número:</label>
+                                                <input class="form-control" type="text" name="nRC" id="nRC" autocomplete="off" maxlength="5" required="required" placeholder="Digite o número...">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-group col-md-10 inputBottom">
+                                            <label for="bairroRC"><span class="obrigatorio">*</span>Bairro:</label>
+                                            <input class="form-control" type="text" name="bairroRC" id="bairroRC" autocomplete="off" maxlength="140" required="required" placeholder="Digite o bairro...">
+                                        </div>                                            
+                                        </td>
+                                        <td>
+                                            <div id="comRC" class="form-group col-md-10 inputBottom">
+                                                <label for="nRC">Complemento:</label>
+                                                <textarea class="form-control" name="comRC" id="comRC" cols="40" rows="3" minlength="20" maxlength="300"></textarea>
+                                                <p id="info"><span class="obrigatorio">⚠️</span>(Descrição do imóvel, pontos de referência, etc. <br> Obs.: mínimo de 20 caracteres, máximo 300)</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div name="cidade" class="form-group col-md-15 inputBottom">
+                                                <label for="DC-pais" class="form-label"><span class="obrigatorio">*</span>País:</label>
+                                                <input class="form-control" type="text" name="DC-pais" id="DC-pais" required="required" placeholder="Digite o país...">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div name="estado" class="form-group col-md-10 inputBottom">
+                                                <label for="uf" class="form-label"><span class="obrigatorio">*</span>Estado:</label>
+                                                <input class="form-control" list="datalistOptionsNUF" name="uf" id="uf" required="required" onChange="selectUF()" placeholder="Digite o estado...">
+                                                <datalist id="datalistOptionsNUF">
+                                                    <option id="opp01" value="AC">AC - Acre</option>
+                                                    <option id="opp02" value="AL">AL - Alagoas</option>
+                                                    <option id="opp03" value="AP">AP - Amapá</option>
+                                                    <option id="opp04" value="AM">AM - Amazonas</option>
+                                                    <option id="opp05" value="BA">BA - Bahia</option>
+                                                    <option id="opp06" value="CE">CE - Ceará</option>
+                                                    <option id="opp07" value="DF">DF - Distrito Federal</option>
+                                                    <option id="opp08" value="ES">ES - Espírito Santo</option>
+                                                    <option id="opp09" value="GO">GO - Goiás</option>
+                                                    <option id="opp10" value="MA">MA - Maranhão</option>
+                                                    <option id="opp11" value="MT">MT - Mato Grosso</option>
+                                                    <option id="opp12" value="MS">MS - Mato Grosso do Sul</option>
+                                                    <option id="opp13" value="MG">MG - Minas Gerais</option>
+                                                    <option id="opp14" value="PA">PA - Pará</option>
+                                                    <option id="opp15" value="PB">PB - Paraíba</option>
+                                                    <option id="opp16" value="PR">PR - Paraná</option>
+                                                    <option id="opp17" value="PE">PE - Pernambuco</option>
+                                                    <option id="opp18" value="PI">PI - Piauí</option>
+                                                    <option id="opp19" value="RJ">RJ - Rio de Janeiro</option>
+                                                    <option id="opp20" value="RN">RN - Rio Grande do Norte</option>
+                                                    <option id="opp21" value="RS">RS - Rio Grande do Sul</option>
+                                                    <option id="opp22" value="RO">RO - Rondônia</option>
+                                                    <option id="opp23" value="RR">RR - Roraima</option>
+                                                    <option id="opp24" value="SC">SC - Santa Catarina</option>
+                                                    <option id="opp25" value="SP">SP - São Paulo</option>
+                                                    <option id="opp26" value="SE">SE - Sergipe</option>
+                                                    <option id="opp27" value="TO">TO - Tocantins</option>
+                                                </datalist>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div name="cidade" class="form-group col-md-10 inputBottom">
+                                                <label for="cidade" class="form-label"><span class="obrigatorio">*</span>Cidade:</label>
+                                                <input class="form-control" type="text" name="cidade" id="cidade" required="required" placeholder="Digite a cidade...">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                        </form>
+                        <div class="form-group text-center inputBottom">
+                            <hr>
+                            <button type="button" class="btn btn-warning">Anterior</button>
+                            <button type="submit" class="btn btn-primary">Salvar e Continuar</button>
+                            <button type="submit" class="btn btn-primary">Salvar</button>
+                            <button type="button" class="btn btn-danger">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jQuery.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
+    <script src="../js/mask.js"></script>
+</body>
+</html>

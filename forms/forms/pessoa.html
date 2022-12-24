@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Geral - CPB</title>
+    <!-- <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/stylee.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="alert alert-dark">
+                    <h1 id="titleRP">REGISTRAR PESSOA</h1>
+                </div>
+                <p id="infoDados">Documentos</p>
+                <form id="form-doc" action="#" method="">
+                    <table nome="documentos">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="form-group">
+                                        <label for="opEstrangeiro"><span class="obrigatorio">*</span>Estrangeiro:</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="Sim">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Sim
+                                            </label>
+                                        </div>
+                                        <div class="form-check inputBottom">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="Não" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Não
+                                            </label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-group col-md-10 inputBottom">
+                                        <label for="doc-cpf"><span class="obrigatorio">*</span>CPF:</label>
+                                        <input class="form-control" type="text" name="doc-cpf" id="doc-cpf" required="required" id="cpf" autocomplete="off" maxlength="14" placeholder="Digite seu CPF...">
+                                    </div>                 
+                                </td>
+                                <td>
+                                    <div id="doc-rg" class="form-group col-md-10 inputBottom">
+                                        <label  for="doc-rg"><span class="obrigatorio">*</span>RG:</label>
+                                        <input class="form-control" type="text" name="doc-rg" required="required" id="doc-rg" autocomplete="off" maxlength="10" placeholder="Digite seu RG...">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div name="orgaoExpeditor" class="form-group col-md-15 inputBottom">
+                                        <label id="doc-oe" for="doc-oe"><span class="obrigatorio">*</span>Órgão Expeditor:</label>
+                                        <input class="form-control" list="datalistOptionsOE" name="doc-oe" id="doc-oe" required="required" placeholder="Selecione o Órgão Expeditor...">
+                                        <datalist id="datalistOptionsOE">
+                                            <option value="ABNC">ABNC – Academia Brasileira de Neurocirurgia</option>
+                                            <option value="CGPI/DUREX/DPF">CGPI/DUREX/DPF – Coordenação Geral de Polícia de Imigração da Polícia Federal</option>
+                                            <option value="CGPI">CGPI – Coordenação Geral de Privilégios e Imunidades</option>
+                                            <option value="CGPMAF">CGPMAF – Coordenadoria Geral de Polícia Marítima, Aeronáutica e de Fronteiras</option>
+                                            <option value="CNIG">CNIG – Conselho Nacional de Imigração</option>
+                                            <option value="COREN">COREN – Conselho Regional de Enfermagem</option>
+                                            <option value="CRA">CRA – Conselho Regional de Administração</option>
+                                            <option value="CRAS">CRAS – Conselho Regional de Assistentes Sociais</option>
+                                            <option value="CRB">CRB – Conselho Regional de Biblioteconomia</option>
+                                            <option value="CRC">CRC – Conselho Regional de Contabilidade</option>
+                                            <option value="CRE">CRE – Conselho Regional de Estatística</option>
+                                            <option value="CREA">CREA – Conselho Regional de Engenharia, Arquitetura e Agronomia</option>
+                                            <option value="CRECI">CRECI – Conselho Regional de Corretores de Imóveis</option>
+                                            <option value="CREFIT">CREFIT – Conselho Regional de Fisioterapia e Terapia Ocupacional</option>
+                                            <option value="CRF">CRF – Conselho Regional de Farmácia</option>
+                                            <option value="CRM">CRM – Conselho Regional de Medicina</option>
+                                            <option value="CRN">CRN – Conselho Regional de Nutrição</option>
+                                            <option value="CRO">CRO – Conselho Regional de Odontologia</option>
+                                            <option value="CRP">CRP – Conselho Regional de Psicologia</option>
+                                            <option value="CRPRE">CRPRE – Conselho Regional de Profissionais de Relações Públicas</option>
+                                            <option value="CRQ ">CRQ – Conselho Regional de Química</option>
+                                            <option value="CRRC">CRRC – Conselho Regional de Representantes Comerciais</option>
+                                            <option value="CRMV">CRMV – Conselho Regional de Medicina Veterinária</option>
+                                            <option value="DIC">DIC – Diretoria de Identificação Civil</option>
+                                            <option value="DIREX">DIREX – Diretoria Executiva</option>
+                                            <option value="DPMAF">DPMAF – Divisão de Polícia Marítima, Área e de Fronteiras</option>
+                                            <option value="DPT">DPT – Departamento de Polícia Técnica Geral</option>
+                                            <option value="IGP">IGP – Instituto Geral de Perícias</option>
+                                            <option value="IML">IML – Instituto Médico-Legal</option>
+                                            <option value="MAE">MAE – Ministério da Aeronáutica</option>
+                                            <option value="MEX">MEX – Ministério do Exército</option>
+                                            <option value="MMA">MMA – Ministério da Marinha</option>
+                                            <option value="OAB">OAB – Ordem dos Advogados do Brasil</option>
+                                            <option value="POF">POF ou DPF – Polícia Federal</option>
+                                            <option value="POM">POM – Polícia Militar</option>
+                                            <option value="SNJ">SNJ – Secretaria Nacional de Justiça / Departamento de Estrangeiros</option>
+                                            <option value="SECC">SECC – Secretaria de Estado da Casa Civil</option>
+                                            <option value="SEJUSP">SEJUSP – Secretaria de Estado de Justiça e Segurança Pública</option>
+                                            <option value="SES/EST">SES ou EST – Carteira de Estrangeiro</option>
+                                            <option value="SSP/SESP">SSP/SESP – Secretaria de Estado da Segurança Pública</option>
+                                            <option value="SJS">SJS – Secretaria da Justiça e Segurança</option>
+                                            <option value="SJTC">SJTC – Secretaria da Justiça do Trabalho e Cidadania</option>
+                                            <option value="SPTC">SPTC – Secretaria de Polícia Técnico-Científica</option>
+                                        </datalist>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div name="unidadeFederativa" class="form-group col-md-10 inputBottom">
+                                        <label for="uf" class="form-label"><span class="obrigatorio">*</span>UF:</label>
+                                        <input class="form-control" list="datalistOptionsUF" name="uf" id="uf" required="required" placeholder="Selecione o estado...">
+                                        <datalist id="datalistOptionsUF">
+                                            <option value="AC">AC - Acre</option>
+                                            <option value="AL">AL - Alagoas</option>
+                                            <option value="AP">AP - Amapá</option>
+                                            <option value="AM">AM - Amazonas</option>
+                                            <option value="BA">BA - Bahia</option>
+                                            <option value="CE">CE - Ceará</option>
+                                            <option value="DF">DF - Distrito Federal</option>
+                                            <option value="ES">ES - Espírito Santo</option>
+                                            <option value="GO">GO - Goiás</option>
+                                            <option value="MA">MA - Maranhão</option>
+                                            <option value="MT">MT - Mato Grosso</option>
+                                            <option value="MS">MS - Mato Grosso do Sul</option>
+                                            <option value="MG">MG - Minas Gerais</option>
+                                            <option value="PA">PA - Pará</option>
+                                            <option value="PB">PB - Paraíba</option>
+                                            <option value="PR">PR - Paraná</option>
+                                            <option value="PE">PE - Pernambuco</option>
+                                            <option value="PI">PI - Piauí</option>
+                                            <option value="RJ">RJ - Rio de Janeiro</option>
+                                            <option value="RN">RN - Rio Grande do Norte</option>
+                                            <option value="RS">RS - Rio Grande do Sul</option>
+                                            <option value="RO">RO - Rondônia</option>
+                                            <option value="RR">RR - Roraima</option>
+                                            <option value="SC">SC - Santa Catarina</option>
+                                            <option value="SP">SP - São Paulo</option>
+                                            <option value="SE">SE - Sergipe</option>
+                                            <option value="TO">TO - Tocantins</option>
+                                        </datalist>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="doc-data" class="form-group col-md-12 inputBottom">
+                                        <label  for="doc-data"><span class="obrigatorio">*</span>Data de Emissão:</label>
+                                        <input class="form-control" type="date" name="doc-data" id="doc-data" required="required">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p id="infoDados">Dados Pessoais</p>
+                    <table nome="dadosPessoais">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div name="foto5x7">
+                                        <label class="picture inputBottom" tabindex="0">
+                                        <input type="file" name="arquivo" id="arquivo" accept="image/*" class="picture__input"/>
+                                        <span class="picture__image"></span>
+                                    </label>
+                                    <label for="arquivo" class="picture-btn inputBottom" tabindex="0">Inserir Foto</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-group col-md-15 inputBottom">
+                                        <label for="DP-nome"><span class="obrigatorio">*</span>Nome Completo:</label>
+                                        <input class="form-control" type="text" name="dp-nome" id="dp-nome" autocomplete="off" maxlength="140" required="required" placeholder="Digite o nome completo...">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-group col-md-15 inputBottom">
+                                        <label for="DP-email"><span class="obrigatorio">*</span>E-mail:</label>
+                                        <input class="form-control" type="email" name="dp-email" id="dp-email" autocomplete="off" maxlength="140" required="required" placeholder="Digite o e-mail...">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-group col-md-15 inputBottom">
+                                        <label for="DP-dataN"><span class="obrigatorio">*</span>Data de Nascimento:</label>
+                                        <input class="form-control" type="date" name="dp-dataN" id="dp-dataN" required="required">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="dp-opGenero" nome="genero" class="form-group col-md-15 inputBottom">
+                                        <label for="DP-opGenero"><span class="obrigatorio">*</span>Gênero:</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Masculino
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Feminino
+                                            </label>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="dp-eCivil" name="estadoCivil" class="form-group col-md-12 inputBottom">
+                                        <label for="DP-eCivil"><span class="obrigatorio">*</span>Estado Civil:</label>
+                                        <input class="form-control" list="datalistOptionseCivil" name="dp-eCivil" id="dp-eCivil" required="required" placeholder="Selecione o estado civil...">
+                                        <datalist id="datalistOptionseCivil">
+                                            <option value="SOLTEIRO(A)">
+                                            <option value="CASADO(A)">
+                                            <option value="SEPARADO(A) - Separação Judicial">
+                                            <option value="DIVORCIADO(A)">
+                                            <option value="VIÚVO(A)">
+                                        </datalist>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div name="pais" class="form-group col-md-10 inputBottom">
+                                        <label for="nacionalidade" class="form-label"><span class="obrigatorio">*</span>Nacionalidade(País):</label>
+                                        <input class="form-control" list="datalistOptionsN" name="nacionalidade" id="nacionalidade" required="required" placeholder="Selecione o país...">
+                                        <datalist id="datalistOptionsN">
+                                        <!--<option id="opp001" value="AF - AFEGANISTÃO">
+                                            <option id="opp002" value="ZA - ÁFRICA DO SUL">
+                                            <option id="opp003" value="AL - ALBÂNIA">
+                                            <option id="opp004" value="DE - ALEMANHA">
+                                            <option id="opp005" value="AD - ANDORRA">
+                                            <option id="opp006" value="AO - ANGOLA">
+                                            <option id="opp007" value="AI - ANGUILLA">
+                                            <option id="opp008" value="AQ - ANTÁRTIDA">
+                                            <option id="opp009" value="AG - ANTÍGUA E BARBUDA">
+                                            <option id="opp010" value="NA - ANTILHAS HOLANDESAS">
+                                            <option id="opp011" value="SA - ARÁBIA SAUDITA">
+                                            <option id="opp012" value="DZ - ARGÉLIA">
+                                            <option id="opp013" value="AR - ARGENTINA">
+                                            <option id="opp014" value="AM - ARMENIA">
+                                            <option id="opp015" value="AW - ARUBA">
+                                            <option id="opp016" value="AU - AUSTRÁLIA">
+                                            <option id="opp017" value="AT - ÁUSTRIA">
+                                            <option id="opp018" value="AZ - AZERBAIJÃO">
+                                            <option id="opp019" value="BS - BAHAMAS">
+                                            <option id="opp020" value="BH - BAHREIN">
+                                            <option id="opp021" value="BD - BANGLADESH">
+                                            <option id="opp022" value="BB - BARBADOS">
+                                            <option id="opp023" value="BY - BELARUS">
+                                            <option id="opp024" value="BE - BÉLGICA">
+                                            <option id="opp025" value="BZ - BELIZE">
+                                            <option id="opp026" value="BJ - BENIN">
+                                            <option id="opp027" value="BM - BERMUDAS">
+                                            <option id="opp028" value="BO - BOLÍVIA">
+                                            <option id="opp029" value="BA - BÓSNIA-HERZEGÓVINA">
+                                            <option id="opp030" value="BW - BOTSUANA"> -->                                    
+                                            <option id="opp031" value="BR">BR - BRASIL</option>
+                                        <!--<option id="opp032" value="BN - BRUNEI"> 
+                                            <option id="opp033" value="BG - BULGÁRIA">
+                                            <option id="opp034" value="BF - BURKINA FASSO">
+                                            <option id="opp035" value="BI - BURUNDI">
+                                            <option id="opp036" value="BT - BUTÃO">
+                                            <option id="opp037" value="">
+                                            <option id="opp038" value="">
+                                            <option id="opp062" value=""> -->
+                                        </datalist>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="uf" name="estado" class="form-group col-md-10 inputBottom">
+                                        <label for="uf" class="form-label"><span class="obrigatorio">*</span>Naturalidade(UF):</label>
+                                        <input class="form-control" list="datalistOptionsNUF" name="uf" id="uf" required="required" maxlength="19" onChange="selectUF()" placeholder="Selecione o estado...">
+                                        <datalist id="datalistOptionsNUF">
+                                            <option id="opp01" value="AC">AC - Acre</option>
+                                            <option id="opp02" value="AL">AL - Alagoas</option>
+                                            <option id="opp03" value="AP">AP - Amapá</option>
+                                            <option id="opp04" value="AM">AM - Amazonas</option>
+                                            <option id="opp05" value="BA">BA - Bahia</option>
+                                            <option id="opp06" value="CE">CE - Ceará</option>
+                                            <option id="opp07" value="DF">DF - Distrito Federal</option>
+                                            <option id="opp08" value="ES">ES - Espírito Santo</option>
+                                            <option id="opp09" value="GO">GO - Goiás</option>
+                                            <option id="opp10" value="MA">MA - Maranhão</option>
+                                            <option id="opp11" value="MT">MT - Mato Grosso</option>
+                                            <option id="opp12" value="MS">MS - Mato Grosso do Sul</option>
+                                            <option id="opp13" value="MG">MG - Minas Gerais</option>
+                                            <option id="opp14" value="PA">PA - Pará</option>
+                                            <option id="opp15" value="PB">PB - Paraíba</option>
+                                            <option id="opp16" value="PR">PR - Paraná</option>
+                                            <option id="opp17" value="PE">PE - Pernambuco</option>
+                                            <option id="opp18" value="PI">PI - Piauí</option>
+                                            <option id="opp19" value="RJ">RJ - Rio de Janeiro</option>
+                                            <option id="opp20" value="RN">RN - Rio Grande do Norte</option>
+                                            <option id="opp21" value="RS">RS - Rio Grande do Sul</option>
+                                            <option id="opp22" value="RO">RO - Rondônia</option>
+                                            <option id="opp23" value="RR">RR - Roraima</option>
+                                            <option id="opp24" value="SC">SC - Santa Catarina</option>
+                                            <option id="opp25" value="SP">SP - São Paulo</option>
+                                            <option id="opp26" value="SE">SE - Sergipe</option>
+                                            <option id="opp27" value="TO">TO - Tocantins</option>
+                                        </datalist>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div name="cidade" class="form-group col-md-15 inputBottom">
+                                        <label for="cidade" class="form-label"><span class="obrigatorio">*</span>Naturalidade(Cidade):</label>
+                                        <input class="form-control" type="text" name="cidade" id="cidade" required="required" maxlength="140"placeholder="Digite a cidade...">
+                                    </div>
+                                </td> 
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-group col-md-15 inputBottom">
+                                        <label for="dp-nomeM"><span class="obrigatorio">*</span>Nome da Mãe:</label>
+                                        <input class="form-control" type="text" name="dp-nomeM" id="dp-nomeM" autocomplete="off" maxlength="140" required="required" placeholder="Digite o nome da mãe...">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div lass="form-group col-md-15 inputBottom">
+                                        <label id="dp-nomeP" for="DP-nomeP">Nome do Pai:</label>
+                                        <input class="form-control" type="text" name="dp-nomeP" id="dp-nomeP" autocomplete="off" maxlength="140" placeholder="Digite o nome do pai...">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </table>
+                    <div class="form-group text-center inputBottom">
+                        <hr>
+                        <button type="submit" class="btn btn-primary col-md-2 p-2">Salvar</button>
+                        <button type="button" class="btn btn-danger">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+    <script src="../js/jQuery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="../js/funImg5x7.js"></script>
+</body>
+</html>
