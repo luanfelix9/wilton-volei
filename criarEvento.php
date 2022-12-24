@@ -1,6 +1,12 @@
 <?php
     session_start();
     
+    //TESTANDO O ID DO USUARIO
+    if (!isset($_SESSION['ID_CLUBE'])) {
+        header('Location: index.php');
+        exit();
+    }
+
     date_default_timezone_set('America/Maceio'); 
     
     $Ano = date('Y');
