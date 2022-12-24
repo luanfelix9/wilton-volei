@@ -17,6 +17,10 @@ h6{
     background-color: rgba(137,212,231,.5);
 }
 
+/* .menuPrincipal i{
+    padding-left: 2em;
+} */
+
 .back-to-top {
     position: fixed;
     display: none;

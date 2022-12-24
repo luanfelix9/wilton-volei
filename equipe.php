@@ -65,7 +65,7 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="index.html" class="nav-item nav-link active"><i class="bi bi-house-add-fill me-2"></i>Início</a>
+                    <a href="index.html" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Início</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-people-fill"></i> Equipe</a>
                         <div class="dropdown-menu bg-transparent border-0">
@@ -74,7 +74,7 @@
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-person-badge me-2"></i> Pessoas</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-person-badge"></i> Pessoas</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="button.html" class="dropdown-item">Adicionar Pessoa</a>
                             <a href="typography.html" class="dropdown-item">Editar Pessoa</a>
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-calendar3"></i> Eventos</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-joystick"></i> Eventos</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="button.html" class="dropdown-item">Criar Evento</a>
                             <a href="typography.html" class="dropdown-item">Inscrever no Evento</a>
@@ -135,7 +135,7 @@
                     </div>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <i class="bi bi-calendar3"></i>
+                            <i class="bi bi-joystick"></i>
                             <span class="d-none d-lg-inline-flex">Eventos</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end border-0 rounded-0 rounded-bottom m-0">
@@ -209,7 +209,7 @@
                     <div class="col">
                         <a href="">
                             <div class="topNav rounded d-flex align-items-center justify-content-between p-4">
-                                <i class="bi bi-calendar3 fa-3x text-secondary"></i>
+                                <i class="bi bi-joystick fa-3x text-secondary"></i>
                                 <div class="ms-3">
                                     <p class="mb-2">Eventos</p>
                                 </div>
