@@ -21,7 +21,7 @@
         <meta name="copyright" content="© CBVD" />
         <meta name="robots" content="all">
 
-        <title>CBVD - GERENCIADOR</title>
+        <title>CBVD - CAMPEONATO BRASILEIRO DE VOLEIBOL SENTADO</title>
 
         <!--Icone na Barra do Site-->
         <link rel="shortcut icon" href="img/Login/icone.png" />
@@ -175,21 +175,21 @@
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
                     <div class="col">
-                        <a href="">
-                            <div class="topNav rounded d-flex align-items-center justify-content-between p-4 menuPrincipal">
-                                <i class="bi bi-house fa-3x text-secondary"></i>
+                        <a href="adicionarPessoa.php">
+                            <div class="topNav rounded d-flex align-items-center justify-content-between p-4">
+                            <i class="bi bi-person-add fa-3x text-secondary"></i>
                                 <div class="ms-3">
-                                    <p class="mb-2">Início</p>
+                                    <p class="mb-2">Adicionar Pessoa</p>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="col">
-                        <a href="equipe.php">
+                        <a href="editarPessoa.php">
                             <div class="topNav rounded d-flex align-items-center justify-content-between p-4">
-                                <i class="bi bi-people-fill fa-3x text-secondary"></i>
+                                <i class="bi bi-person-dash fa-3x text-secondary"></i>
                                 <div class="ms-3">
-                                    <p class="mb-2">Equipe</p>
+                                    <p class="mb-2">Editar Pessoa</p>
                                 </div>
                             </div>
                         </a>
@@ -197,21 +197,33 @@
                 </div>
                 <div class="row g-4">
                     <div class="col">
-                        <a href="pessoa.php">
+                        <a href="transferirPessoa.php">
                             <div class="topNav rounded d-flex align-items-center justify-content-between p-4">
-                                <i class="bi bi-person-badge fa-3x text-secondary"></i>
+                                <i class="bi bi-repeat fa-3x text-secondary"></i>
                                 <div class="ms-3">
-                                    <p class="mb-2">Pessoas</p>
+                                    <p class="mb-2">Transferir Pessoa</p>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="col">
-                        <a href="evento.php">
+                        <a href="confirmarTransferencia.php">
                             <div class="topNav rounded d-flex align-items-center justify-content-between p-4">
-                                <i class="bi bi-calendar3 fa-3x text-secondary"></i>
+                                <i class="bi bi-save-fill fa-3x text-secondary"></i>
                                 <div class="ms-3">
-                                    <p class="mb-2">Eventos</p>
+                                    <p class="mb-2">Confirmar Transferência</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <a href="relatorioPessoa.php">
+                            <div class="topNav rounded d-flex align-items-center justify-content-between p-4">
+                                <i class="bi bi-file-earmark-medical fa-3x text-secondary"></i>
+                                <div class="ms-3">
+                                    <p class="mb-2">Relatório de Pessoa</p>
                                 </div>
                             </div>
                         </a>
@@ -221,9 +233,9 @@
             <!-- Sale & Revenue End -->
 
         </div>
-        <!-- <footer id="footer">
+        <footer id="footer">
             <p>Desenvolvido pela Confederação Brasileira de Voleibol para Deficientes &copy; CBVD <?php echo $Ano?></p>
-        </footer> -->
+        </footer>
         <div vw class="enabled">
             <div vw-access-button class="active"></div>
             <div vw-plugin-wrapper>

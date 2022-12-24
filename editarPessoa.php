@@ -95,6 +95,52 @@
                 </div>
             </nav>
         </div>
+        <!-- Sidebar Start -->
+        <div class="sidebar pe-4 pb-3">
+            <nav class="navbar ">
+                <a href="gerenciador.php" class="navbar-brand mx-4 mb-3 logoEsquerdaNav">
+                    <img src="img/Login/icone.png" alt="icone CBVD">
+                </a>
+                <div class="d-flex align-items-center ms-4 mb-4">
+                    <div class="position-relative">
+                        <img class="rounded-circle" src="img/Login/icone.png" alt="" style="width: 40px; height: 40px;">
+                        <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
+                    </div>
+                    <div class="ms-3">
+                        <h6 class="mb-0">Nome Equipe</h6>
+                    </div>
+                </div>
+                <div class="navbar-nav w-100">
+                    <a href="gerenciador.php" class="nav-item nav-link active"><i class="bi bi-house me-2"></i> Início</a>
+                    <div class="nav-item dropdown">
+                        <a href="equipe.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-people-fill"></i> Equipe</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="editarEquipe.php" class="dropdown-item"><i class="bi bi-pencil-square"></i> Editar Equipe</a>
+                            <a href="#" class="dropdown-item"><i class="bi bi-file-earmark-medical"></i> Relatório de Equipe</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-person-badge me-2"></i> Pessoas</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="button.html" class="dropdown-item"><i class="bi bi-person-add"></i> Adicionar Pessoa</a>
+                            <a href="typography.html" class="dropdown-item"><i class="bi bi-person-dash"></i> Editar Pessoa</a>
+                            <a href="element.html" class="dropdown-item"><i class="bi bi-repeat"></i> Transferir Pessoa</a>
+                            <a href="element.html" class="dropdown-item"><i class="bi bi-save-fill"></i> Confirmar Transferência</a>
+                            <a href="element.html" class="dropdown-item"><i class="bi bi-file-earmark-medical"></i> Relatório de Pessoa</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="evento.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-calendar3"></i> Eventos</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="#" class="dropdown-item"><i class="bi bi-calendar-plus"></i> Criar Evento</a>
+                            <a href="#" class="dropdown-item"><i class="bi bi-pen"></i> Inscrever no Evento</a>
+                            <a href="#" class="dropdown-item"><i class="bi bi-bell"></i> Acompanhar Evento</a>
+                            <a href="#" class="dropdown-item"><i class="bi bi-file-earmark-medical"></i> Relatório de Eventos</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
         <!-- Sidebar End -->
         <div class="content">
             <!-- Navbar Start -->
@@ -171,59 +217,15 @@
             </nav>
             <!-- Navbar End -->
 
-            <!-- Sale & Revenue Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="row g-4">
-                    <div class="col">
-                        <a href="">
-                            <div class="topNav rounded d-flex align-items-center justify-content-between p-4 menuPrincipal">
-                                <i class="bi bi-house fa-3x text-secondary"></i>
-                                <div class="ms-3">
-                                    <p class="mb-2">Início</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="equipe.php">
-                            <div class="topNav rounded d-flex align-items-center justify-content-between p-4">
-                                <i class="bi bi-people-fill fa-3x text-secondary"></i>
-                                <div class="ms-3">
-                                    <p class="mb-2">Equipe</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="row g-4">
-                    <div class="col">
-                        <a href="pessoa.php">
-                            <div class="topNav rounded d-flex align-items-center justify-content-between p-4">
-                                <i class="bi bi-person-badge fa-3x text-secondary"></i>
-                                <div class="ms-3">
-                                    <p class="mb-2">Pessoas</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="evento.php">
-                            <div class="topNav rounded d-flex align-items-center justify-content-between p-4">
-                                <i class="bi bi-calendar3 fa-3x text-secondary"></i>
-                                <div class="ms-3">
-                                    <p class="mb-2">Eventos</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- Sale & Revenue End -->
+           
+
+
+            
 
         </div>
-        <!-- <footer id="footer">
+        <footer id="footer">
             <p>Desenvolvido pela Confederação Brasileira de Voleibol para Deficientes &copy; CBVD <?php echo $Ano?></p>
-        </footer> -->
+        </footer>
         <div vw class="enabled">
             <div vw-access-button class="active"></div>
             <div vw-plugin-wrapper>
