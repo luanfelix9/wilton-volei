@@ -38,37 +38,27 @@
                         </div>
                         <div class="position">
                             <?php
-                                if (isset($_SESSION['erro_envio'])) {
+                                if (isset($_SESSION['erro_digitado'])) {
                             ?>
                                 <div class="alert alert-danger" role="alert">
-                                    Ocorreu um erro no serviço!
+                                    Usuário ou senha incorreto!
                                 </div>
                             <?php
                             }
-                                unset($_SESSION['erro_envio']);
+                                unset($_SESSION['erro_digitado']);
                             ?>
                             <?php
-                                if (isset($_SESSION['falta_dados'])) {
+                                if (isset($_SESSION['nao_login'])) {
                             ?>
                                 <div class="alert alert-danger" role="alert">
                                     Campo obrigatório não preenchido!
                                 </div>
                             <?php
                             }
-                                unset($_SESSION['falta_dados']);
-                            ?>
-                            <?php
-                                if (isset($_SESSION['erro_cadastro'])) {
-                            ?>
-                                <div class="alert alert-danger" role="alert">
-                                    Não foi possível cadastrar as informações no banco de dados!
-                                </div>
-                            <?php
-                            }
-                                unset($_SESSION['erro_cadastro']);
+                                unset($_SESSION['nao_login']);
                             ?>
                         </div>
-                        <form action="login.php" method="POST">
+                        <form action="login-back.php" method="POST">
                             <div class="input-field">
                                 <input type="email" id="email" placeholder="Digite seu Email" name="email" maxlength="50" style="min-width:240px;">
                             </div>
