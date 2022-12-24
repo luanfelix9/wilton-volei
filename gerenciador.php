@@ -69,7 +69,7 @@
                     <div class="nav-item dropdown">
                         <a href="equipe.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-people-fill"></i> Equipe</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="#" class="dropdown-item"><i class="bi bi-pencil-square"></i> Editar Equipe</a>
+                            <a href="editarEquipe.php" class="dropdown-item"><i class="bi bi-pencil-square"></i> Editar Equipe</a>
                             <a href="#" class="dropdown-item"><i class="bi bi-file-earmark-medical"></i> Relatório de Equipe</a>
                         </div>
                     </div>
@@ -78,8 +78,8 @@
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="button.html" class="dropdown-item"><i class="bi bi-person-add"></i> Adicionar Pessoa</a>
                             <a href="typography.html" class="dropdown-item"><i class="bi bi-person-dash"></i> Editar Pessoa</a>
-                            <a href="element.html" class="dropdown-item">Transferir Pessoa</a>
-                            <a href="element.html" class="dropdown-item">Confirmar Transferência</a>
+                            <a href="element.html" class="dropdown-item"><i class="bi bi-repeat"></i> Transferir Pessoa</a>
+                            <a href="element.html" class="dropdown-item"><i class="bi bi-save-fill"></i> Confirmar Transferência</a>
                             <a href="element.html" class="dropdown-item"><i class="bi bi-file-earmark-medical"></i> Relatório de Pessoa</a>
                         </div>
                     </div>
@@ -121,11 +121,11 @@
                             </a>
                             <hr class="dropdown-divider">
                             <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">Transferir Pessoa</h6>
+                                <h6 class="fw-normal mb-0"><i class="bi bi-repeat"></i> Transferir Pessoa</h6>
                             </a>
                             <hr class="dropdown-divider">
                             <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">Confirmar Transferência</h6>
+                                <h6 class="fw-normal mb-0"><i class="bi bi-save-fill"></i> Confirmar Transferência</h6>
                             </a>
                             <hr class="dropdown-divider">
                             <a href="#" class="dropdown-item">
@@ -162,7 +162,7 @@
                             <span class="d-none d-lg-inline-flex">Nome Equipe</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item"><i class="bi bi-pencil-square"></i> Editar Equipe</a>
+                            <a href="editarEquipe.php" class="dropdown-item"><i class="bi bi-pencil-square"></i> Editar Equipe</a>
                             <a href="#" class="dropdown-item"><i class="bi bi-file-earmark-medical"></i> Relatório de Equipe</a>
                             <a href="#" class="dropdown-item">Sair</a>
                         </div>
@@ -221,9 +221,9 @@
             <!-- Sale & Revenue End -->
 
         </div>
-        <footer id="footer">
+        <!-- <footer id="footer">
             <p>Desenvolvido pela Confederação Brasileira de Voleibol para Deficientes &copy; CBVD <?php echo $Ano?></p>
-        </footer>
+        </footer> -->
         <div vw class="enabled">
             <div vw-access-button class="active"></div>
             <div vw-plugin-wrapper>
