@@ -232,7 +232,7 @@ sup {
 }
 
 a {
-    color: #EB1616;
+    color: #0d0d0d;
     text-decoration: none
 }
 
@@ -6028,7 +6028,8 @@ fieldset:disabled .btn {
 
 .modal-title {
     margin-bottom: 0;
-    line-height: 1.5
+    line-height: 1.5;
+    color: #000
 }
 
 .modal-body {

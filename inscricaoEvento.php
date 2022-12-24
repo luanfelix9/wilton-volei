@@ -33,7 +33,7 @@
         
         <!-- Icon Font Stylesheet -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
 
         <!-- Libraries Stylesheet -->
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -170,34 +170,58 @@
                 </div>
             </nav>
             <!-- Navbar End -->
-
-            <!-- Sale & Revenue Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="row g-4">
-                    <div class="col">
-                        <a href="editarEquipe.php">
-                            <div class="topNav rounded d-flex align-items-center justify-content-between p-4 menuPrincipal">
-                                <i class="bi bi-pencil-square fa-3x text-secondary"></i>
-                                <div class="ms-3">
-                                    <p class="mb-2">Editar Equipe</p>
-                                </div>
-                            </div>
-                        </a>
+            <div class="container">
+                <div class="row">
+                <div class="col Title">
+                        <h1>Eventos</h1>
                     </div>
-                    <div class="col">
-                        <a href="relatorioEquipe.php">
-                            <div class="topNav rounded d-flex align-items-center justify-content-between p-4">
-                                <i class="bi bi-file-earmark-medical fa-3x text-secondary"></i>
-                                <div class="ms-3">
-                                    <p class="mb-2">Relatório de Equipe</p>
-                                </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="bg-white rounded h-100 p-4">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Competição</th>
+                                            <th scope="col">Local</th>
+                                            <th scope="col">Início da Competição</th>
+                                            <th scope="col">Fim da Competição</th>
+                                            <th scope="col">Regulamento</th>
+                                            <th scope="col">Ação</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Campeonato Brasileiro de Voleibol Sentado 2022 – Feminino 1º turno</th>
+                                            <td>Maceió – Alagoas;</td>
+                                            <td>20 de junho</td>
+                                            <td>23 de junho</td>
+                                            <td><a href="http://cbvd.org.br/wp-content/uploads/2022/08/Informativo-Oficial-FINAL-Brasileiro-Feminino-1%C2%BA-turno.pdf">http://cbvd.org.br/wp-content/uploads/2022/08/Informativo-Oficial-FINAL-Brasileiro-Feminino-1%C2%BA-turno.pdf</a></td>
+                                            <td><!-- Button trigger modal --><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pen"></i></button></td>
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Realmente deseja se inscrever nessa competição?</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+                                                    <button type="button" class="btn btn-primary">Sim</button>
+                                                </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Sale & Revenue End -->
-
         </div>
         <footer id="footer">
             <p>Desenvolvido pela Confederação Brasileira de Voleibol para Deficientes &copy; CBVD <?php echo $Ano?></p>

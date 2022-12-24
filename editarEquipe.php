@@ -89,7 +89,7 @@
                         <a href="evento.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-calendar3"></i> Eventos</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="#" class="dropdown-item"><i class="bi bi-calendar-plus"></i> Criar Evento</a>
-                            <a href="#" class="dropdown-item"><i class="bi bi-pen"></i> Inscrever no Evento</a>
+                            <a href="inscricaoEvento.php" class="dropdown-item"><i class="bi bi-pen"></i> Inscrever no Evento</a>
                             <a href="#" class="dropdown-item"><i class="bi bi-bell"></i> Acompanhar Evento</a>
                             <a href="#" class="dropdown-item"><i class="bi bi-file-earmark-medical"></i> Relatório de Eventos</a>
                         </div>
@@ -145,7 +145,7 @@
                                 <h6 class="fw-normal mb-0"><i class="bi bi-calendar-plus"></i> Criar Evento</h6>
                             </a>
                             <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
+                            <a href="inscricaoEvento.php" class="dropdown-item">
                                 <h6 class="fw-normal mb-0"><i class="bi bi-pen"></i> Inscrever no Evento</h6>
                             </a>
                             <hr class="dropdown-divider">
