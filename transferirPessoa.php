@@ -1,17 +1,34 @@
 <?php
     session_start();
-
+    
     //TESTANDO O ID DO USUARIO
     if (!isset($_SESSION['ID_CLUBE'])) {
         header('Location: index.php');
         exit();
+    } else {
+        $id = $_SESSION['ID_CLUBE'];
+        $host = "localhost";
+        $usuario = "root";
+        $senha = "";
+        $bd = "volei";
     }
-    
+
+    //CONEXÃO VIA PDO
+    $con = new PDO("mysql:host=$host;dbname=$bd", $usuario, $senha);
+
+    //BUSCANDO TABELA LOGIN
+    $tabelaLogin = "SELECT NOME_CLUBE, SIGLA_CLUBE FROM clube WHERE ID_CLUBE= :id";
+    $dadosLogin = $con->prepare($tabelaLogin);
+    $dadosLogin->bindValue(":id", $id);
+    $dadosLogin->execute();
+    $dadoLogin = $dadosLogin->fetch(PDO::FETCH_OBJ);
+
     date_default_timezone_set('America/Maceio'); 
     
     $Ano = date('Y');
     $mes = date('m');
     $dia = date('d');
+
 ?>
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
@@ -54,8 +71,6 @@
         <link rel="stylesheet" href="footer/rodape.css">
     </head>
     <body>
-
-        <!-- Sidebar Start -->
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar ">
                 <a href="gerenciador.php" class="navbar-brand mx-4 mb-3 logoEsquerdaNav">
@@ -67,53 +82,7 @@
                         <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
                     </div>
                     <div class="ms-3">
-                        <h6 class="mb-0">Nome Equipe</h6>
-                    </div>
-                </div>
-                <div class="navbar-nav w-100">
-                    <a href="index.html" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Início</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-people-fill"></i> Equipe</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="button.html" class="dropdown-item">Editar Equipe</a>
-                            <a href="typography.html" class="dropdown-item">Relatório de Equipe</a>
-                        </div>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a href="pessoa.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-person-badge me-2"></i> Pessoas</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="adicionarPessoa.php" class="dropdown-item"><i class="bi bi-person-add"></i> Adicionar Pessoa</a>
-                            <a href="editarPessoa.php" class="dropdown-item"><i class="bi bi-person-dash"></i> Editar Pessoa</a>
-                            <a href="transferirPessoa.php" class="dropdown-item"><i class="bi bi-repeat"></i> Transferir Pessoa</a>
-                            <a href="confirmarTransferencia.php" class="dropdown-item"><i class="bi bi-save-fill"></i> Confirmar Transferência</a>
-                            <a href="relatorioPessoa.php" class="dropdown-item"><i class="bi bi-file-earmark-medical"></i> Relatório de Pessoa</a>
-                        </div>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-joystick"></i> Eventos</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="button.html" class="dropdown-item">Criar Evento</a>
-                            <a href="typography.html" class="dropdown-item">Inscrever no Evento</a>
-                            <a href="element.html" class="dropdown-item">Acompanhar Evento</a>
-                            <a href="element.html" class="dropdown-item">Relatório de Eventos</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <!-- Sidebar Start -->
-        <div class="sidebar pe-4 pb-3">
-            <nav class="navbar ">
-                <a href="gerenciador.php" class="navbar-brand mx-4 mb-3 logoEsquerdaNav">
-                    <img src="img/Login/icone.png" alt="icone CBVD">
-                </a>
-                <div class="d-flex align-items-center ms-4 mb-4">
-                    <div class="position-relative">
-                        <img class="rounded-circle" src="img/Login/icone.png" alt="" style="width: 40px; height: 40px;">
-                        <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
-                    </div>
-                    <div class="ms-3">
-                        <h6 class="mb-0">Nome Equipe</h6>
+                        <h6 class="mb-0"><?php echo isset($dadoLogin) ? $dadoLogin->NOME_CLUBE : null  ?></h6>
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
@@ -155,7 +124,7 @@
                     <h2 class="text-primary mb-0"><i class="fa fa-user-edit"></i></h2>
                 </a>
                 <a href="#" class="sidebar-toggler flex-shrink-0">
-                    <i class="fa fa-bars"></i>
+                    <i class="bi bi-justify"></i>
                 </a>
                 <div class="navbar-nav align-items-center ms-auto">
                     <div class="nav-item dropdown">
@@ -211,7 +180,7 @@
                     <div class="nav-item dropdown">
                         <a href="equipe.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <img class="rounded-circle me-lg-2" src="img/Login/icone.png" alt="" style="width: 40px; height: 40px;">
-                            <span class="d-none d-lg-inline-flex">Nome Equipe</span>
+                            <span class="d-none d-lg-inline-flex"><?php echo isset($dadoLogin) ? $dadoLogin->SIGLA_CLUBE : null  ?></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end border-0 rounded-0 rounded-bottom m-0">
                             <a href="editarEquipe.php" class="dropdown-item"><i class="bi bi-pencil-square"></i> Editar Equipe</a>

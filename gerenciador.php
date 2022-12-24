@@ -5,7 +5,23 @@
     if (!isset($_SESSION['ID_CLUBE'])) {
         header('Location: index.php');
         exit();
+    } else {
+        $id = $_SESSION['ID_CLUBE'];
+        $host = "localhost";
+        $usuario = "root";
+        $senha = "";
+        $bd = "volei";
     }
+
+    //CONEXÃO VIA PDO
+    $con = new PDO("mysql:host=$host;dbname=$bd", $usuario, $senha);
+
+    //BUSCANDO TABELA LOGIN
+    $tabelaLogin = "SELECT NOME_CLUBE, SIGLA_CLUBE FROM clube WHERE ID_CLUBE= :id";
+    $dadosLogin = $con->prepare($tabelaLogin);
+    $dadosLogin->bindValue(":id", $id);
+    $dadosLogin->execute();
+    $dadoLogin = $dadosLogin->fetch(PDO::FETCH_OBJ);
 
     date_default_timezone_set('America/Maceio'); 
     
@@ -68,11 +84,11 @@
                         <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
                     </div>
                     <div class="ms-3">
-                        <h6 class="mb-0">Nome Equipe</h6>
+                        <h6 class="mb-0"><?php echo isset($dadoLogin) ? $dadoLogin->NOME_CLUBE : null  ?></h6>
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="gerenciador.php" class="nav-item nav-link active"><i class="bi bi-house me-2"></i> Início</a>
+                    <a href="gerenciador.php" class="nav-item nav-link active"><i class="bi bi-house me-2"></i>Início</a>
                     <div class="nav-item dropdown">
                         <a href="equipe.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-people-fill"></i> Equipe</a>
                         <div class="dropdown-menu bg-transparent border-0">
@@ -81,7 +97,7 @@
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="pessoa.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-person-badge me-2"></i> Pessoas</a>
+                        <a href="pessoa.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-person-badge me-2"></i>Pessoas</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="adicionarPessoa.php" class="dropdown-item"><i class="bi bi-person-add"></i> Adicionar Pessoa</a>
                             <a href="editarPessoa.php" class="dropdown-item"><i class="bi bi-person-dash"></i> Editar Pessoa</a>
@@ -110,7 +126,7 @@
                     <h2 class="text-primary mb-0"><i class="fa fa-user-edit"></i></h2>
                 </a>
                 <a href="#" class="sidebar-toggler flex-shrink-0">
-                    <i class="fa fa-bars"></i>
+                    <i class="bi bi-justify"></i>
                 </a>
                 <div class="navbar-nav align-items-center ms-auto">
                     <div class="nav-item dropdown">
@@ -166,7 +182,7 @@
                     <div class="nav-item dropdown">
                         <a href="equipe.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <img class="rounded-circle me-lg-2" src="img/Login/icone.png" alt="" style="width: 40px; height: 40px;">
-                            <span class="d-none d-lg-inline-flex">Nome Equipe</span>
+                            <span class="d-none d-lg-inline-flex"><?php echo isset($dadoLogin) ? $dadoLogin->SIGLA_CLUBE : null  ?></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end border-0 rounded-0 rounded-bottom m-0">
                             <a href="editarEquipe.php" class="dropdown-item"><i class="bi bi-pencil-square"></i> Editar Equipe</a>
