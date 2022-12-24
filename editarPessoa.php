@@ -95,6 +95,52 @@
                 </div>
             </nav>
         </div>
+        <!-- Sidebar Start -->
+        <div class="sidebar pe-4 pb-3">
+            <nav class="navbar ">
+                <a href="gerenciador.php" class="navbar-brand mx-4 mb-3 logoEsquerdaNav">
+                    <img src="img/Login/icone.png" alt="icone CBVD">
+                </a>
+                <div class="d-flex align-items-center ms-4 mb-4">
+                    <div class="position-relative">
+                        <img class="rounded-circle" src="img/Login/icone.png" alt="" style="width: 40px; height: 40px;">
+                        <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
+                    </div>
+                    <div class="ms-3">
+                        <h6 class="mb-0">Nome Equipe</h6>
+                    </div>
+                </div>
+                <div class="navbar-nav w-100">
+                    <a href="gerenciador.php" class="nav-item nav-link active"><i class="bi bi-house me-2"></i> Início</a>
+                    <div class="nav-item dropdown">
+                        <a href="equipe.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-people-fill"></i> Equipe</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="editarEquipe.php" class="dropdown-item"><i class="bi bi-pencil-square"></i> Editar Equipe</a>
+                            <a href="relatorioEquipe.php" class="dropdown-item"><i class="bi bi-file-earmark-medical"></i> Relatório de Equipe</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="pessoa.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-person-badge me-2"></i> Pessoas</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="adicionarPessoa.php" class="dropdown-item"><i class="bi bi-person-add"></i> Adicionar Pessoa</a>
+                            <a href="editarPessoa.php" class="dropdown-item"><i class="bi bi-person-dash"></i> Editar Pessoa</a>
+                            <a href="transferirPessoa.php" class="dropdown-item"><i class="bi bi-repeat"></i> Transferir Pessoa</a>
+                            <a href="confirmarTransferencia.php" class="dropdown-item"><i class="bi bi-save-fill"></i> Confirmar Transferência</a>
+                            <a href="relatorioPessoa.php" class="dropdown-item"><i class="bi bi-file-earmark-medical"></i> Relatório de Pessoa</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="evento.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-calendar3"></i> Eventos</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="criarEvento.php" class="dropdown-item"><i class="bi bi-calendar-plus"></i> Criar Evento</a>
+                            <a href="inscricaoEvento.php" class="dropdown-item"><i class="bi bi-pen"></i> Inscrever no Evento</a>
+                            <a href="acompanharEvento.php" class="dropdown-item"><i class="bi bi-bell"></i> Acompanhar Evento</a>
+                            <a href="relatorioEvento.php" class="dropdown-item"><i class="bi bi-file-earmark-medical"></i> Relatório de Eventos</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
         <!-- Sidebar End -->
         <div class="content">
             <!-- Navbar Start -->
@@ -106,7 +152,7 @@
                     <i class="fa fa-bars"></i>
                 </a>
                 <div class="navbar-nav align-items-center ms-auto">
-                <div class="nav-item dropdown">
+                    <div class="nav-item dropdown">
                         <a href="pessoa.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <i class="bi bi-person-badge"></i>
                             <span class="d-none d-lg-inline-flex">Pessoas</span>
@@ -139,19 +185,19 @@
                             <span class="d-none d-lg-inline-flex">Eventos</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">
+                            <a href="criarEvento.php" class="dropdown-item">
                                 <h6 class="fw-normal mb-0"><i class="bi bi-calendar-plus"></i> Criar Evento</h6>
                             </a>
                             <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
+                            <a href="inscricaoEvento.php" class="dropdown-item">
                                 <h6 class="fw-normal mb-0"><i class="bi bi-pen"></i> Inscrever no Evento</h6>
                             </a>
                             <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
+                            <a href="acompanharEvento.php" class="dropdown-item">
                                 <h6 class="fw-normal mb-0"><i class="bi bi-bell"></i> Acompanhar Evento</h6>
                             </a>
                             <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
+                            <a href="relatorioEvento.php" class="dropdown-item">
                                 <h6 class="fw-normal mb-0"><i class="bi bi-file-earmark-medical"></i> Relatório de Eventos</h6>
                             </a>
                         </div>
@@ -163,7 +209,7 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-end border-0 rounded-0 rounded-bottom m-0">
                             <a href="editarEquipe.php" class="dropdown-item"><i class="bi bi-pencil-square"></i> Editar Equipe</a>
-                            <a href="#" class="dropdown-item"><i class="bi bi-file-earmark-medical"></i> Relatório de Equipe</a>
+                            <a href="relatorioEquipe.php" class="dropdown-item"><i class="bi bi-file-earmark-medical"></i> Relatório de Equipe</a>
                             <a href="#" class="dropdown-item">Sair</a>
                         </div>
                     </div>

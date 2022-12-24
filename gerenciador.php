@@ -86,10 +86,10 @@
                     <div class="nav-item dropdown">
                         <a href="evento.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-calendar3"></i> Eventos</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="#" class="dropdown-item"><i class="bi bi-calendar-plus"></i> Criar Evento</a>
+                            <a href="criarEvento.php" class="dropdown-item"><i class="bi bi-calendar-plus"></i> Criar Evento</a>
                             <a href="inscricaoEvento.php" class="dropdown-item"><i class="bi bi-pen"></i> Inscrever no Evento</a>
-                            <a href="#" class="dropdown-item"><i class="bi bi-bell"></i> Acompanhar Evento</a>
-                            <a href="#" class="dropdown-item"><i class="bi bi-file-earmark-medical"></i> Relatório de Eventos</a>
+                            <a href="acompanharEvento.php" class="dropdown-item"><i class="bi bi-bell"></i> Acompanhar Evento</a>
+                            <a href="relatorioEvento.php" class="dropdown-item"><i class="bi bi-file-earmark-medical"></i> Relatório de Eventos</a>
                         </div>
                     </div>
                 </div>
@@ -139,7 +139,7 @@
                             <span class="d-none d-lg-inline-flex">Eventos</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">
+                            <a href="criarEvento.php" class="dropdown-item">
                                 <h6 class="fw-normal mb-0"><i class="bi bi-calendar-plus"></i> Criar Evento</h6>
                             </a>
                             <hr class="dropdown-divider">
@@ -147,11 +147,11 @@
                                 <h6 class="fw-normal mb-0"><i class="bi bi-pen"></i> Inscrever no Evento</h6>
                             </a>
                             <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
+                            <a href="acompanharEvento.php" class="dropdown-item">
                                 <h6 class="fw-normal mb-0"><i class="bi bi-bell"></i> Acompanhar Evento</h6>
                             </a>
                             <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
+                            <a href="relatorioEvento.php" class="dropdown-item">
                                 <h6 class="fw-normal mb-0"><i class="bi bi-file-earmark-medical"></i> Relatório de Eventos</h6>
                             </a>
                         </div>
@@ -175,7 +175,7 @@
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
                     <div class="col">
-                        <a href="">
+                        <a href="gerenciador.php">
                             <div class="topNav rounded d-flex align-items-center justify-content-between p-4 menuPrincipal">
                                 <i class="bi bi-house fa-3x text-secondary"></i>
                                 <div class="ms-3">
