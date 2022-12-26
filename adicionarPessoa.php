@@ -1,27 +1,27 @@
 <?php
     session_start();
     
-    //TESTANDO O ID DO USUARIO
-    if (!isset($_SESSION['ID_CLUBE'])) {
-        header('Location: index.php');
-        exit();
-    } else {
-        $id = $_SESSION['ID_CLUBE'];
-        $host = "localhost";
-        $usuario = "root";
-        $senha = "";
-        $bd = "volei";
-    }
+    // //TESTANDO O ID DO USUARIO
+    // if (!isset($_SESSION['ID_CLUBE'])) {
+    //     header('Location: index.php');
+    //     exit();
+    // } else {
+    //     $id = $_SESSION['ID_CLUBE'];
+    //     $host = "localhost";
+    //     $usuario = "root";
+    //     $senha = "";
+    //     $bd = "volei";
+    // }
 
-    //CONEXÃO VIA PDO
-    $con = new PDO("mysql:host=$host;dbname=$bd", $usuario, $senha);
+    // //CONEXÃO VIA PDO
+    // $con = new PDO("mysql:host=$host;dbname=$bd", $usuario, $senha);
 
-    //BUSCANDO TABELA LOGIN
-    $tabelaLogin = "SELECT NOME_CLUBE, SIGLA_CLUBE FROM clube WHERE ID_CLUBE= :id";
-    $dadosLogin = $con->prepare($tabelaLogin);
-    $dadosLogin->bindValue(":id", $id);
-    $dadosLogin->execute();
-    $dadoLogin = $dadosLogin->fetch(PDO::FETCH_OBJ);
+    // //BUSCANDO TABELA LOGIN
+    // $tabelaLogin = "SELECT NOME_CLUBE, SIGLA_CLUBE FROM clube WHERE ID_CLUBE= :id";
+    // $dadosLogin = $con->prepare($tabelaLogin);
+    // $dadosLogin->bindValue(":id", $id);
+    // $dadosLogin->execute();
+    // $dadoLogin = $dadosLogin->fetch(PDO::FETCH_OBJ);
 
     date_default_timezone_set('America/Maceio'); 
     
@@ -214,6 +214,10 @@
             <form action="#">
                 <div class="container-fluid">
 
+                    <!-- <div class="alert alert-dark p-1" role="alert">
+                        Documentos
+                    </div> -->
+
                     <div class="row">
                         <div class="col">
                             <div class="form-group col-md-15">
@@ -337,6 +341,10 @@
                             <span style="font-size: 12px;">⚠️(Data de Emissão)</span>
                         </div>
                     </div>
+                    
+                    <!-- <div class="alert alert-dark p-1" role="alert">
+                        Dados Pessoais
+                    </div> -->
 
                     <div class="row">
                         <div class="col">
@@ -356,7 +364,7 @@
 
                     <div class="row">
                         <div class="col">
-                            <div class="form-group col-md-8">
+                            <div class="form-group col-md-15">
                                 <label for="RP-opGenero"><span class="obrigatorio">*</span>Gênero:</label>
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1-RP-og" checked>
@@ -373,7 +381,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="form-group col-md-8">
+                            <div class="form-group col-md-15">
                                 <input class="form-control" type="date" name="RP-data-n" id="RP-data-n" required="required">
                                 <span style="font-size: 12px;">⚠️(Data de Nascimento)</span>                            
                             </div>
@@ -391,6 +399,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="col">
                             <div class="form-group col-md-15">
@@ -403,6 +412,36 @@
                             </div>
                         </div>
                     </div>
+                    <br>
+                    <!-- <div class="alert alert-dark p-1" role="alert">
+                        Dados Pessoais
+                    </div> -->
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group col-md-15">
+                            <input class="form-control" type="text" name="RP-conf" id="RP-conf" required="required" placeholder="*Confederação:">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group col-md-15">
+                            <input class="form-control" type="text" name="RP-club" id="RP-club" required="required" placeholder="*Clube:">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group col-md-5">
+                            <input class="form-control" list="datalistOptionsRP-funcao" name="RP-funcao" id="RP-funcao" required="required" placeholder="*Função:">
+                                <datalist id="datalistOptionsRP-funcao">
+                                    <option value="ATLETA">
+                                    <option value="TREINADOR">
+                                </datalist>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </form>
 
@@ -419,7 +458,7 @@
 
         </div>
         <footer id="footer">
-            <p>Desenvolvido pela Confederação Brasileira de Voleibol para Deficientes &copy; CBVD <?php echo $Ano?></p>
+            <p>Desenvolvido pela Confederação Brasileira de Voleibol para Deficientes | &copy; CBVD <?php echo $Ano?> - Todos os direitos são reservados.</p>
         </footer>
         <div vw class="enabled">
             <div vw-access-button class="active"></div>
