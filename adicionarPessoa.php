@@ -403,36 +403,36 @@
                     <div class="row">
                         <div class="col">
                             <div class="form-group col-md-15">
-                            <input class="form-control" type="text" name="RP-nome-m" id="RP-nome-m" autocomplete="off" maxlength="140" required="required" placeholder="*Nome da Mãe:">                          
+                                <input class="form-control" type="text" name="RP-nome-m" id="RP-nome-m" autocomplete="off" maxlength="140" required="required" placeholder="*Nome da Mãe:">                          
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-group col-md-15">
-                            <input class="form-control" type="text" name="RP-nome-p" id="RP-nome-p" autocomplete="off" maxlength="140" placeholder="Nome do Pai:">
+                                <input class="form-control" type="text" name="RP-nome-p" id="RP-nome-p" autocomplete="off" maxlength="140" placeholder="Nome do Pai:">
                             </div>
                         </div>
                     </div>
-                    <br>
+
                     <!-- <div class="alert alert-dark p-1" role="alert">
-                        Dados Pessoais
+                        Dados Profissionais
                     </div> -->
 
                     <div class="row">
                         <div class="col">
                             <div class="form-group col-md-15">
-                            <input class="form-control" type="text" name="RP-conf" id="RP-conf" required="required" placeholder="*Confederação:">
+                                <input class="form-control" type="text" name="RP-confe" id="RP-confe" required="required" placeholder="*Confederação:">
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-group col-md-15">
-                            <input class="form-control" type="text" name="RP-club" id="RP-club" required="required" placeholder="*Clube:">
+                                <input class="form-control" type="text" name="RP-club" id="RP-club" required="required" placeholder="*Clube:">
                             </div>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col">
-                            <div class="form-group col-md-5">
+                            <div class="form-group col-md-15">
                             <input class="form-control" list="datalistOptionsRP-funcao" name="RP-funcao" id="RP-funcao" required="required" placeholder="*Função:">
                                 <datalist id="datalistOptionsRP-funcao">
                                     <option value="ATLETA">
@@ -440,8 +440,229 @@
                                 </datalist>
                             </div>
                         </div>
+                        <div class="col">
+                            <div class="form-group col-md-15">
+                                <input class="form-control" list="datalistOptionsRP-formacao" name="RP-formacao" id="RP-formacao" placeholder="*Formação:">
+                                <datalist id="datalistOptionsRP-formacao">
+                                    <option value="ENSINO FUNDAMENTAL INCOMPLETO">
+                                    <option value="ENSINO FUNDAMENTAL COMPLETO">
+                                    <option value="ENSINO MÉDIO INCOMPLETO">
+                                    <option value="ENSINO MÉDIO COMPLETO">
+                                    <option value="ENSINO SUPERIOR INCOMPLETO">
+                                    <option value="ENSINO SUPERIOR COMPLETO">
+                                </datalist>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group col-md-15">
+                            <input class="form-control" type="text" name="RP-pis" id="RP-pis" required="required" placeholder="*PIS:">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group col-md-15">
+                            <input class="form-control" type="text" name="RP-rprofi" id="RP-rprofi" required="required" placeholder="*Registro Profissional:">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group col-md-15">
+                            <input class="form-control" type="text" name="RP-iauto" id="RP-iauto" required="required" placeholder="*Inscrição Autônoma:">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group col-md-15">
+                            <input class="form-control" type="text" name="RP-SDMS" id="RP-SDMS" required="required" placeholder="*SDMS / Registro Federação Internacional:">
+                            </div> 
+                        </div>
                     </div>
                     
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group col-md-15">
+                            <input class="form-control" list="datalistOptionsRP-treiner" name="RP-treiner" id="RP-treiner" required="required" placeholder="*Treinador:">
+                                <datalist id="datalistOptionsRP-funcao">
+                                    <option value="">
+                                    <option value="">
+                                </datalist>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group col-md-15">
+                                <input class="form-control" list="datalistOptionsRP-mod" name="RP-mod" id="RP-mod" placeholder="*Modalidade:">
+                                <datalist id="datalistOptionsRP-formacao">
+                                    <option value="">
+                                    <option value="">
+                                </datalist>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group col-md-15">
+                                <input class="form-control" type="text" name="RP-alt" id="RP-alt" required="required" placeholder="*Altura (m):">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group col-md-15">
+                                <input class="form-control" type="text" name="RP-peso" id="RP-peso" required="required" placeholder="*Peso (kg):">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="alert alert-dark p-1" role="alert">
+                        Dados Deficiência
+                    </div> -->
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group col-md-15">
+                                <label for="RP_op-def"><span class="obrigatorio">*</span>Possui alguma deficiência?</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault-RP-op-def" id="flexRadioDefault1-RP-op-def" value="Sim">
+                                    <label class="form-check-label" for="flexRadioDefault1-RP-op-def">
+                                        Sim
+                                    </label>
+                            </div>
+                            <div class="form-check inputBottom">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault-RP-op-def" id="flexRadioDefault2-RP-op-def" value="Não" checked>
+                                <label class="form-check-label" for="flexRadioDefault2-RP-op-def">
+                                    Não
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group col-md-15">
+                                <input class="form-control" list="datalistOptionsRP-def" name="RP-def" id="RP-def" required="required" placeholder="*Deficiência:">
+                                <datalist id="datalistOptionsRP-def">
+                                    <option value="FÍSICA">
+                                    <option value="VISUAL">
+                                    <option value="AUDITIVA">
+                                    <option value="INTELECTUAL">
+                                    <option value="PSICOSSOCIAL">
+                                    <option value="MÚLTICLA">
+                                </datalist>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group col-md-15">
+                                <label for="RP_op-def"><span class="obrigatorio">*</span>Utiliza cão guia?</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault-RP-op-def-guia" id="flexRadioDefault1-RP-op-def-guia" value="Sim">
+                                    <label class="form-check-label" for="flexRadioDefault1-RP-op-def-guia">
+                                        Sim
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-check inputBottom">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault-RP-op-def-guia" id="flexRadioDefault2-RP-op-def-guia" value="Não" checked>
+                                <label class="form-check-label" for="flexRadioDefault2-RP-op-def-guia">
+                                    Não
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group col-md-15">
+                                <label for="RP_op-def"><span class="obrigatorio">*</span>Utiliza cadeira de rodas?</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault-RP-op-def-rodas" id="flexRadioDefault1-RP-op-def-rodas" value="Sim">
+                                    <label class="form-check-label" for="flexRadioDefault1-RP-op-def-rodas">
+                                        Sim
+                                    </label>
+                            </div>
+                            <div class="form-check inputBottom">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault-RP-op-def-rodas" id="flexRadioDefault2-RP-op-def-rodas" value="Não" checked>
+                                <label class="form-check-label" for="flexRadioDefault2-RP-op-def-rodas">
+                                    Não
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="alert alert-dark p-1" role="alert">
+                        Dados Endereço
+                    </div> -->
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group col-md-3">
+                                <input class="form-control" type="text" name="RP-cep" id="RP-cep" autocomplete="off" required="required" minlength="9" maxlength="9" placeholder="*CEP:">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group col-md-15">
+                                <input class="form-control" type="text" name="RP-pais" id="RP-pais" required="required" autocomplete="off" readonly placeholder="*País:">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group col-md-15">
+                                <input class="form-control" type="text" name="RP-uf" id="RP-uf" required="required" autocomplete="off" readonly placeholder="*Estado:">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group col-md-15">
+                                <input class="form-control" type="text" name="RP-cdd" id="RP-cdd" required="required" autocomplete="off" readonly placeholder="*Cidade:">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group col-md-15">
+                                <input class="form-control" type="text" name="RP-log" id="RP-log" required="required" autocomplete="off" readonly placeholder="*Logradouro:">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group col-md-15">
+                                <input class="form-control" type="text" name="RP-bairro" id="RP-bairro" required="required" autocomplete="off" readonly placeholder="*Bairro:">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group col-md-5">
+                                <input class="form-control" type="text" name="RP-num" id="RP-num" autocomplete="off" required="required"  maxlength="5" placeholder="*Número:">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group col-md-15">
+                                <textarea style="resize: none;" class="form-control" name="comRC" id="comRC" cols="40" rows="3" minlength="20" maxlength="300" placeholder="Complemento:"></textarea>
+                                <span style="font-size: 12px;">⚠️(Descrição do imóvel, pontos de referência, etc. <br> Obs.: mínimo de 20 caracteres, máximo 300)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group col-md-15">
+                                <input class="form-control" type="text" name="RP-aero" id="RP-aero" required="required" autocomplete="off" placeholder="*Aeroporto Preferencial:">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group col-md-15">
+                                <input class="form-control" type="text" name="RP-aero" id="RP-aero" required="required" autocomplete="off" placeholder="*Aeroporto Preferencial:">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group col-md-15">
+                                <input class="form-control" type="text" name="RP-aero" id="RP-aero" required="required" autocomplete="off" placeholder="*Aeroporto Preferencial:">
+                            </div>
+                        </div>
+                    </div>
+            
+
                 </div>
             </form>
 
