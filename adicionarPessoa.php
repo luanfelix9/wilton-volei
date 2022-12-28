@@ -260,12 +260,12 @@
                     <div class="row">
                         <div class="col">
                             <div class="form-group col-md-15">
-                                <input class="form-control" type="text" name="RP-confe" id="RP-confe" required="required" placeholder="*Confederação:">
+                                <input class="form-control" type="text" name="RP-confe" id="RP-confe" required="required" readonly placeholder="*Confederação:">
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-group col-md-15">
-                                <input class="form-control" type="text" name="RP-club" id="RP-club" required="required" placeholder="*Clube:">
+                                <input class="form-control" type="text" name="RP-club" id="RP-club" required="required" readonly placeholder="*Clube:">
                             </div>
                         </div>
                     </div>
