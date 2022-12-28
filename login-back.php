@@ -9,7 +9,7 @@ if(isset($_POST["entrar"])){
     // $senha = MD5($_POST['senha']);
     //teste do vazio
     if(!empty($email) && !empty($senha)){
-        $u->conectar("volei","localhost","root","");
+        $u->conectar("gerencia_cbvd","gerencia_cbvd.mysql.dbaas.com.br","gerencia_cbvd","Cbvd_2023#");
         if($u->logar($email,$senha)){
             header('Location: gerenciador.php');
         }

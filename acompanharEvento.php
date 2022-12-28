@@ -1,16 +1,15 @@
 <?php
     session_start();
-    
     //TESTANDO O ID DO USUARIO
     if (!isset($_SESSION['ID_CLUBE'])) {
         header('Location: index.php');
         exit();
     } else {
         $id = $_SESSION['ID_CLUBE'];
-        $host = "localhost";
-        $usuario = "root";
-        $senha = "";
-        $bd = "volei";
+        $host = "gerencia_cbvd.mysql.dbaas.com.br";
+        $usuario = "gerencia_cbvd";
+        $senha = "Cbvd_2023#";
+        $bd = "gerencia_cbvd";
     }
 
     //CONEXÃO VIA PDO

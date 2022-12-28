@@ -2,11 +2,11 @@
     <div class="sidebar pe-4 pb-3">
         <nav class="navbar ">
             <a href="gerenciador.php" class="navbar-brand mx-4 mb-3 logoEsquerdaNav">
-                <img src="img/Login/icone.png" alt="icone CBVD">
+                <img src="http://cbvd.org.br/gerenciador/img/Login/icone.png" alt="icone CBVD">
             </a>
             <div class="d-flex align-items-center ms-4 mb-4">
                 <div class="position-relative">
-                    <img class="rounded-circle" src="img/Login/icone.png" alt="" style="width: 40px; height: 40px;">
+                    <img class="rounded-circle" src="http://cbvd.org.br/gerenciador/img/Login/icone.png" alt="icone CBVD" style="width: 40px; height: 40px;">
                     <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
                 </div>
                 <div class="ms-3">
@@ -107,7 +107,7 @@
                 </div>
                 <div class="nav-item dropdown">
                     <a href="equipe.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                        <img class="rounded-circle me-lg-2" src="img/Login/icone.png" alt="" style="width: 40px; height: 40px;">
+                        <img class="rounded-circle me-lg-2" src="http://cbvd.org.br/gerenciador/img/Login/icone.png" alt="icone CBVD" style="width: 40px; height: 40px;">
                         <span class="d-none d-lg-inline-flex"><?php echo isset($dadoLogin) ? $dadoLogin->SIGLA_CLUBE : null  ?></span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end border-0 rounded-0 rounded-bottom m-0">

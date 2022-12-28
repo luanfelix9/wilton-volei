@@ -20,7 +20,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div id="login-1" class="col d-none d-md-block">
-                    <img src="img/Login/esquerdaLogin.jpg" alt="Imagem Login">
+                    <img src="../img/Login/esquerdaLogin.jpg" alt="Imagem Login">
                 </div>
                 <div id="login-2" class="col">
                     <!--Particulas-->
@@ -32,7 +32,7 @@
                             </div>
                             <div class="col">
                                 <div id="img">
-                                    <img src="img/Login/icone.png" alt="Icone login">
+                                    <img src="http://cbvd.org.br/gerenciador/img/Login/icone.png" alt="Icone login">
                                 </div>
                             </div>
                         </div>
