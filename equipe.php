@@ -60,6 +60,18 @@
                         </a>
                     </div>
                 </div>
+                <div class="row g-4">
+                    <div class="col-6">
+                        <a href="listarEquipe.php">
+                            <div class="topNav rounded d-flex align-items-center justify-content-between p-4 menuPrincipal">
+                                <i class="bi bi-list-check fa-3x text-secondary"></i>
+                                <div class="ms-3">
+                                    <p class="mb-2">Listar Equipe</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
             <!-- Sale & Revenue End -->
 
