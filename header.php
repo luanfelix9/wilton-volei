@@ -42,5 +42,7 @@
 
         <!-- footer -->
         <link rel="stylesheet" href="css/rodape.css">
+
+        <link rel="stylesheet" href="css/login.css">
     </head>
 

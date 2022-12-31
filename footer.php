@@ -1,5 +1,5 @@
     <footer id="footer">
-        <p>Desenvolvido pela Confederação Brasileira de Voleibol para Deficientes &copy; CBVD <?php echo $Ano?></p>
+        Desenvolvido pela Confederação Brasileira de Voleibol para Deficientes &copy; CBVD <?php echo $Ano?>
     </footer>
     <div vw class="enabled">
         <div vw-access-button class="active"></div>

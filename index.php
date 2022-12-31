@@ -8,19 +8,15 @@
     $mes = date('m');
     $dia = date('d');
 
-    include 'basico/header.php'; 
+    include 'header.php'; 
 
 ?>
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/login.css">
-        <link rel="stylesheet" href="footer/rodape.css">
     </head>
     <body>
         <div class="container-fluid">
             <div class="row">
                 <div id="login-1" class="col d-none d-md-block">
-                    <img src="../img/Login/esquerdaLogin.jpg" alt="Imagem Login">
+                    <img src="http://cbvd.org.br/gerenciador/img/Login/esquerdaLogin.jpg" alt="Imagem Login">
                 </div>
                 <div id="login-2" class="col">
                     <!--Particulas-->
@@ -92,4 +88,4 @@
         <script src="js/particles.js"></script>
         <script src="js/app-login.js"></script>
 
-<?php include 'footer/footer.php';?>
+<?php include 'footer.php';?>

@@ -7,6 +7,7 @@
         exit();
     } else {
         $id = $_SESSION['ID_CLUBE'];
+        $id = 1;
         $host = "gerencia_cbvd.mysql.dbaas.com.br";
         $usuario = "gerencia_cbvd";
         $senha = "Cbvd_2023#";
