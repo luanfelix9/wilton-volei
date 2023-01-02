@@ -32,6 +32,7 @@
     include 'header.php';
 ?>
 
+
     <body>
 
         <?php include 'nav.php'?>
@@ -492,12 +493,12 @@
                     <div class="row">
                         <div class="col">
                             <div class="form-group col-md-15">
-                                <input class="form-control" type="text" name="RP-aero" id="RP-aero" required="required" autocomplete="off" placeholder="*Aeroporto Preferencial:">
+                                <input class="form-control" type="tel" name="RP-celular" id="RP-celular" required="required" autocomplete="off" placeholder="*Celular:">
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-group col-md-15">
-                                <input class="form-control" type="text" name="RP-aero" id="RP-aero" required="required" autocomplete="off" placeholder="*Aeroporto Preferencial:">
+                                <input class="form-control" type="tel" name="RP-telefone" id="RP-telefone" autocomplete="off" placeholder="Telefone:">
                             </div>
                         </div>
                     </div>
@@ -505,15 +506,6 @@
 
                 </div>
             </form>
-
-
-
-
-
-
-
-
-
 
 
 
