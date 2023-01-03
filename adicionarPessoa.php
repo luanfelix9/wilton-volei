@@ -1,27 +1,27 @@
 <?php
     session_start();
     
-    //TESTANDO O ID DO USUARIO
-    if (!isset($_SESSION['ID_CLUBE'])) {
-        header('Location: index.php');
-        exit();
-    } else {
-        $id = $_SESSION['ID_CLUBE'];
-        $host = "localhost";
-        $usuario = "root";
-        $senha = "";
-        $bd = "volei";
-    }
+    // //TESTANDO O ID DO USUARIO
+    // if (!isset($_SESSION['ID_CLUBE'])) {
+    //     header('Location: index.php');
+    //     exit();
+    // } else {
+    //     $id = $_SESSION['ID_CLUBE'];
+    //     $host = "localhost";
+    //     $usuario = "root";
+    //     $senha = "";
+    //     $bd = "volei";
+    // }
 
-    //CONEXÃO VIA PDO
-    $con = new PDO("mysql:host=$host;dbname=$bd", $usuario, $senha);
+    // //CONEXÃO VIA PDO
+    // $con = new PDO("mysql:host=$host;dbname=$bd", $usuario, $senha);
 
-    //BUSCANDO TABELA LOGIN
-    $tabelaLogin = "SELECT NOME_CLUBE, SIGLA_CLUBE FROM clube WHERE ID_CLUBE= :id";
-    $dadosLogin = $con->prepare($tabelaLogin);
-    $dadosLogin->bindValue(":id", $id);
-    $dadosLogin->execute();
-    $dadoLogin = $dadosLogin->fetch(PDO::FETCH_OBJ);
+    // //BUSCANDO TABELA LOGIN
+    // $tabelaLogin = "SELECT NOME_CLUBE, SIGLA_CLUBE FROM clube WHERE ID_CLUBE= :id";
+    // $dadosLogin = $con->prepare($tabelaLogin);
+    // $dadosLogin->bindValue(":id", $id);
+    // $dadosLogin->execute();
+    // $dadoLogin = $dadosLogin->fetch(PDO::FETCH_OBJ);
 
     date_default_timezone_set('America/Maceio'); 
     
@@ -36,15 +36,6 @@
     <body>
 
         <?php include 'nav.php'?>
-
-            <!-- <script> 
-                swal({
-                    title:"ATENÇÃO!",
-                    text: "Padrões para a foto ser aprovada: ",
-                    icon: "info",
-                });
-            </script> -->
-
             <div class="container">
                 <div class="row">
                     <div class="col Title">
@@ -52,7 +43,7 @@
                     </div>
                 </div>
             </div>
-            <form action="#">
+            <form id="addPessoa" action="#">
                 <div class="container-fluid">
 
                     <!-- <div class="alert alert-dark p-1" role="alert">
@@ -144,8 +135,8 @@
                         </div>
                         <div class="col">
                             <div class="form-group col-md-15">
-                                <input class="form-control" list="datalistOptionsRP-uf" name="RP-uf" id="RP-uf" required="required" placeholder="*UF:">
-                                <datalist id="datalistOptionsRP-uf">
+                                <input class="form-control" list="datalistOptionsRP-uf-doc" name="RP-uf-doc" id="RP-uf-doc" required="required" placeholder="*UF:">
+                                <datalist id="datalistOptionsRP-uf-doc">
                                     <option value="AC">AC - Acre</option>
                                     <option value="AL">AL - Alagoas</option>
                                     <option value="AP">AP - Amapá</option>
@@ -432,7 +423,7 @@
                     <div class="row">
                         <div class="col">
                             <div class="form-group col-md-3">
-                                <input class="form-control" type="text" name="RP-cep" id="RP-cep" autocomplete="off" required="required" minlength="9" maxlength="9" placeholder="*CEP:">
+                                <input class="form-control" type="text" name="RP-cep" id="RP-cep" autocomplete="off" required="required" minlength="8" maxlength="8" placeholder="*CEP:">
                             </div>
                         </div>
                     </div>
@@ -440,17 +431,46 @@
                     <div class="row">
                         <div class="col">
                             <div class="form-group col-md-15">
-                                <input class="form-control" type="text" name="RP-pais" id="RP-pais" required="required" autocomplete="off" readonly placeholder="*País:">
+                                <input class="form-control" type="text" name="RP-pais" id="RP-pais" required="required" autocomplete="off" readonly data-input placeholder="*País:">
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-group col-md-15">
-                                <input class="form-control" type="text" name="RP-uf" id="RP-uf" required="required" autocomplete="off" readonly placeholder="*Estado:">
+                            <input class="form-control" list="datalistOptionsRP-uf" name="RP-uf" id="RP-uf" required="required" readonly disabled data-input placeholder="*Estado:">
+                                <datalist id="datalistOptionsRP-uf">
+                                    <option value="AC">AC - Acre</option>
+                                    <option value="AL">AL - Alagoas</option>
+                                    <option value="AP">AP - Amapá</option>
+                                    <option value="AM">AM - Amazonas</option>
+                                    <option value="BA">BA - Bahia</option>
+                                    <option value="CE">CE - Ceará</option>
+                                    <option value="DF">DF - Distrito Federal</option>
+                                    <option value="ES">ES - Espírito Santo</option>
+                                    <option value="GO">GO - Goiás</option>
+                                    <option value="MA">MA - Maranhão</option>
+                                    <option value="MT">MT - Mato Grosso</option>
+                                    <option value="MS">MS - Mato Grosso do Sul</option>
+                                    <option value="MG">MG - Minas Gerais</option>
+                                    <option value="PA">PA - Pará</option>
+                                    <option value="PB">PB - Paraíba</option>
+                                    <option value="PR">PR - Paraná</option>
+                                    <option value="PE">PE - Pernambuco</option>
+                                    <option value="PI">PI - Piauí</option>
+                                    <option value="RJ">RJ - Rio de Janeiro</option>
+                                    <option value="RN">RN - Rio Grande do Norte</option>
+                                    <option value="RS">RS - Rio Grande do Sul</option>
+                                    <option value="RO">RO - Rondônia</option>
+                                    <option value="RR">RR - Roraima</option>
+                                    <option value="SC">SC - Santa Catarina</option>
+                                    <option value="SP">SP - São Paulo</option>
+                                    <option value="SE">SE - Sergipe</option>
+                                    <option value="TO">TO - Tocantins</option>
+                                </datalist>   
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-group col-md-15">
-                                <input class="form-control" type="text" name="RP-cdd" id="RP-cdd" required="required" autocomplete="off" readonly placeholder="*Cidade:">
+                                <input class="form-control" type="text" name="RP-cdd" id="RP-cdd" required="required" autocomplete="off" readonly data-input placeholder="*Cidade:">
                             </div>
                         </div>
                     </div>
@@ -458,12 +478,12 @@
                     <div class="row">
                         <div class="col">
                             <div class="form-group col-md-15">
-                                <input class="form-control" type="text" name="RP-log" id="RP-log" required="required" autocomplete="off" readonly placeholder="*Logradouro:">
+                                <input class="form-control" type="text" name="RP-log" id="RP-log" required="required" autocomplete="off" readonly data-input placeholder="*Logradouro:">
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-group col-md-15">
-                                <input class="form-control" type="text" name="RP-bairro" id="RP-bairro" required="required" autocomplete="off" readonly placeholder="*Bairro:">
+                                <input class="form-control" type="text" name="RP-bairro" id="RP-bairro" required="required" autocomplete="off" readonly data-input placeholder="*Bairro:">
                             </div>
                         </div>
                     </div>

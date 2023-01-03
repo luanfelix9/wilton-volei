@@ -45,25 +45,8 @@
 
         <link rel="stylesheet" href="css/login.css">
 
-
-
-<!-- ADICIONA DDI NO CAMPO TELEFONE -->
-<!-- BEGIN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
-<style>
-
-    .iti__country-list{
-        color: white !important;
-        background-color: #1a1a1a !important;
-        border-color: #1a1a1a !important;
-    }
-
-    .iti__selected-flag{
-        background-color: rgba(137,212,231,.5) !important;
-    }
-
-</style>
-<!-- END -->
+        <!-- DDI NO CAMPO TELEFONE -->
+        <link rel="stylesheet" href="css/ddi.css">
 
     </head>
 
