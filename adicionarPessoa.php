@@ -87,49 +87,49 @@
                             <div class="form-group col-md-15">
                                 <input class="form-control" list="datalistOptionsRP-oe" name="RP-oe" id="RP-oe" required="required" placeholder="*Órgão Emissor/Expeditor:">
                                 <datalist id="datalistOptionsRP-oe">
-                                    <option value="ABNC">ABNC – Academia Brasileira de Neurocirurgia</option>
-                                    <option value="CGPI/DUREX/DPF">CGPI/DUREX/DPF – Coordenação Geral de Polícia de Imigração da Polícia Federal</option>
-                                    <option value="CGPI">CGPI – Coordenação Geral de Privilégios e Imunidades</option>
-                                    <option value="CGPMAF">CGPMAF – Coordenadoria Geral de Polícia Marítima, Aeronáutica e de Fronteiras</option>
-                                    <option value="CNIG">CNIG – Conselho Nacional de Imigração</option>
-                                    <option value="COREN">COREN – Conselho Regional de Enfermagem</option>
-                                    <option value="CRA">CRA – Conselho Regional de Administração</option>
-                                    <option value="CRAS">CRAS – Conselho Regional de Assistentes Sociais</option>
-                                    <option value="CRB">CRB – Conselho Regional de Biblioteconomia</option>
-                                    <option value="CRC">CRC – Conselho Regional de Contabilidade</option>
-                                    <option value="CRE">CRE – Conselho Regional de Estatística</option>
-                                    <option value="CREA">CREA – Conselho Regional de Engenharia, Arquitetura e Agronomia</option>
-                                    <option value="CRECI">CRECI – Conselho Regional de Corretores de Imóveis</option>
-                                    <option value="CREFIT">CREFIT – Conselho Regional de Fisioterapia e Terapia Ocupacional</option>
-                                    <option value="CRF">CRF – Conselho Regional de Farmácia</option>
-                                    <option value="CRM">CRM – Conselho Regional de Medicina</option>
-                                    <option value="CRN">CRN – Conselho Regional de Nutrição</option>
-                                    <option value="CRO">CRO – Conselho Regional de Odontologia</option>
-                                    <option value="CRP">CRP – Conselho Regional de Psicologia</option>
-                                    <option value="CRPRE">CRPRE – Conselho Regional de Profissionais de Relações Públicas</option>
-                                    <option value="CRQ ">CRQ – Conselho Regional de Química</option>
-                                    <option value="CRRC">CRRC – Conselho Regional de Representantes Comerciais</option>
-                                    <option value="CRMV">CRMV – Conselho Regional de Medicina Veterinária</option>
-                                    <option value="DIC">DIC – Diretoria de Identificação Civil</option>
-                                    <option value="DIREX">DIREX – Diretoria Executiva</option>
-                                    <option value="DPMAF">DPMAF – Divisão de Polícia Marítima, Área e de Fronteiras</option>
-                                    <option value="DPT">DPT – Departamento de Polícia Técnica Geral</option>
-                                    <option value="IGP">IGP – Instituto Geral de Perícias</option>
-                                    <option value="IML">IML – Instituto Médico-Legal</option>
-                                    <option value="MAE">MAE – Ministério da Aeronáutica</option>
-                                    <option value="MEX">MEX – Ministério do Exército</option>
-                                    <option value="MMA">MMA – Ministério da Marinha</option>
-                                    <option value="OAB">OAB – Ordem dos Advogados do Brasil</option>
-                                    <option value="POF">POF ou DPF – Polícia Federal</option>
-                                    <option value="POM">POM – Polícia Militar</option>
-                                    <option value="SNJ">SNJ – Secretaria Nacional de Justiça / Departamento de Estrangeiros</option>
-                                    <option value="SECC">SECC – Secretaria de Estado da Casa Civil</option>
-                                    <option value="SEJUSP">SEJUSP – Secretaria de Estado de Justiça e Segurança Pública</option>
-                                    <option value="SES/EST">SES ou EST – Carteira de Estrangeiro</option>
-                                    <option value="SSP/SESP">SSP/SESP – Secretaria de Estado da Segurança Pública</option>
-                                    <option value="SJS">SJS – Secretaria da Justiça e Segurança</option>
-                                    <option value="SJTC">SJTC – Secretaria da Justiça do Trabalho e Cidadania</option>
-                                    <option value="SPTC">SPTC – Secretaria de Polícia Técnico-Científica</option>
+                                    <option value="ABNC">Academia Brasileira de Neurocirurgia</option>
+                                    <option value="CGPI/DUREX/DPF">Coordenação Geral de Polícia de Imigração da Polícia Federal</option>
+                                    <option value="CGPI">Coordenação Geral de Privilégios e Imunidades</option>
+                                    <option value="CGPMAF">Coordenadoria Geral de Polícia Marítima, Aeronáutica e de Fronteiras</option>
+                                    <option value="CNIG">Conselho Nacional de Imigração</option>
+                                    <option value="COREN">Conselho Regional de Enfermagem</option>
+                                    <option value="CRA">Conselho Regional de Administração</option>
+                                    <option value="CRAS">Conselho Regional de Assistentes Sociais</option>
+                                    <option value="CRB">Conselho Regional de Biblioteconomia</option>
+                                    <option value="CRC">Conselho Regional de Contabilidade</option>
+                                    <option value="CRE">Conselho Regional de Estatística</option>
+                                    <option value="CREA">Conselho Regional de Engenharia, Arquitetura e Agronomia</option>
+                                    <option value="CRECI">Conselho Regional de Corretores de Imóveis</option>
+                                    <option value="CREFIT">Conselho Regional de Fisioterapia e Terapia Ocupacional</option>
+                                    <option value="CRF">Conselho Regional de Farmácia</option>
+                                    <option value="CRM">Conselho Regional de Medicina</option>
+                                    <option value="CRN">Conselho Regional de Nutrição</option>
+                                    <option value="CRO">Conselho Regional de Odontologia</option>
+                                    <option value="CRP">Conselho Regional de Psicologia</option>
+                                    <option value="CRPRE">Conselho Regional de Profissionais de Relações Públicas</option>
+                                    <option value="CRQ ">Conselho Regional de Química</option>
+                                    <option value="CRRC">Conselho Regional de Representantes Comerciais</option>
+                                    <option value="CRMV">Conselho Regional de Medicina Veterinária</option>
+                                    <option value="DIC">Diretoria de Identificação Civil</option>
+                                    <option value="DIREX">Diretoria Executiva</option>
+                                    <option value="DPMAF">Divisão de Polícia Marítima, Área e de Fronteiras</option>
+                                    <option value="DPT">Departamento de Polícia Técnica Geral</option>
+                                    <option value="IGP">Instituto Geral de Perícias</option>
+                                    <option value="IML">Instituto Médico-Legal</option>
+                                    <option value="MAE">Ministério da Aeronáutica</option>
+                                    <option value="MEX">Ministério do Exército</option>
+                                    <option value="MMA">Ministério da Marinha</option>
+                                    <option value="OAB">Ordem dos Advogados do Brasil</option>
+                                    <option value="PF/POF">Polícia Federal</option>
+                                    <option value="PM/POM">Polícia Militar</option>
+                                    <option value="SNJ">Secretaria Nacional de Justiça / Departamento de Estrangeiros</option>
+                                    <option value="SECC">Secretaria de Estado da Casa Civil</option>
+                                    <option value="SEJUSP">Secretaria de Estado de Justiça e Segurança Pública</option>
+                                    <option value="SES/EST">Carteira de Estrangeiro</option>
+                                    <option value="SSP/SESP">Secretaria de Estado da Segurança Pública</option>
+                                    <option value="SJS">Secretaria da Justiça e Segurança</option>
+                                    <option value="SJTC">Secretaria da Justiça do Trabalho e Cidadania</option>
+                                    <option value="SPTC">Secretaria de Polícia Técnico-Científica</option>
                                 </datalist>                            
                             </div>
                         </div>
@@ -137,40 +137,40 @@
                             <div class="form-group col-md-15">
                                 <input class="form-control" list="datalistOptionsRP-uf-doc" name="RP-uf-doc" id="RP-uf-doc" required="required" placeholder="*UF:">
                                 <datalist id="datalistOptionsRP-uf-doc">
-                                    <option value="AC">AC - Acre</option>
-                                    <option value="AL">AL - Alagoas</option>
-                                    <option value="AP">AP - Amapá</option>
-                                    <option value="AM">AM - Amazonas</option>
-                                    <option value="BA">BA - Bahia</option>
-                                    <option value="CE">CE - Ceará</option>
-                                    <option value="DF">DF - Distrito Federal</option>
-                                    <option value="ES">ES - Espírito Santo</option>
-                                    <option value="GO">GO - Goiás</option>
-                                    <option value="MA">MA - Maranhão</option>
-                                    <option value="MT">MT - Mato Grosso</option>
-                                    <option value="MS">MS - Mato Grosso do Sul</option>
-                                    <option value="MG">MG - Minas Gerais</option>
-                                    <option value="PA">PA - Pará</option>
-                                    <option value="PB">PB - Paraíba</option>
-                                    <option value="PR">PR - Paraná</option>
-                                    <option value="PE">PE - Pernambuco</option>
-                                    <option value="PI">PI - Piauí</option>
-                                    <option value="RJ">RJ - Rio de Janeiro</option>
-                                    <option value="RN">RN - Rio Grande do Norte</option>
-                                    <option value="RS">RS - Rio Grande do Sul</option>
-                                    <option value="RO">RO - Rondônia</option>
-                                    <option value="RR">RR - Roraima</option>
-                                    <option value="SC">SC - Santa Catarina</option>
-                                    <option value="SP">SP - São Paulo</option>
-                                    <option value="SE">SE - Sergipe</option>
-                                    <option value="TO">TO - Tocantins</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
                                 </datalist>                            
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-group col-md-15">
                             <input class="form-control" type="date" name="RP-data-n" id="RP-data-e" required="required">
-                            <span style="font-size: 12px;">⚠️(Data de Emissão)</span>
+                            <span>⚠️(Data de Emissão)</span>
                         </div>
                     </div>
                     
@@ -215,7 +215,7 @@
                         <div class="col">
                             <div class="form-group col-md-15">
                                 <input class="form-control" type="date" name="RP-data-n" id="RP-data-n" required="required">
-                                <span style="font-size: 12px;">⚠️(Data de Nascimento)</span>                            
+                                <span>⚠️(Data de Nascimento)</span>                            
                             </div>
                         </div>
                         <div class="col">
@@ -436,35 +436,35 @@
                         </div>
                         <div class="col">
                             <div class="form-group col-md-15">
-                            <input class="form-control" list="datalistOptionsRP-uf" name="RP-uf" id="RP-uf" required="required" readonly disabled data-input placeholder="*Estado:">
+                            <input class="form-control" list="datalistOptionsRP-uf" name="RP-uf" id="RP-uf" required="required" readonly data-input placeholder="*Estado:">
                                 <datalist id="datalistOptionsRP-uf">
-                                    <option value="AC">AC - Acre</option>
-                                    <option value="AL">AL - Alagoas</option>
-                                    <option value="AP">AP - Amapá</option>
-                                    <option value="AM">AM - Amazonas</option>
-                                    <option value="BA">BA - Bahia</option>
-                                    <option value="CE">CE - Ceará</option>
-                                    <option value="DF">DF - Distrito Federal</option>
-                                    <option value="ES">ES - Espírito Santo</option>
-                                    <option value="GO">GO - Goiás</option>
-                                    <option value="MA">MA - Maranhão</option>
-                                    <option value="MT">MT - Mato Grosso</option>
-                                    <option value="MS">MS - Mato Grosso do Sul</option>
-                                    <option value="MG">MG - Minas Gerais</option>
-                                    <option value="PA">PA - Pará</option>
-                                    <option value="PB">PB - Paraíba</option>
-                                    <option value="PR">PR - Paraná</option>
-                                    <option value="PE">PE - Pernambuco</option>
-                                    <option value="PI">PI - Piauí</option>
-                                    <option value="RJ">RJ - Rio de Janeiro</option>
-                                    <option value="RN">RN - Rio Grande do Norte</option>
-                                    <option value="RS">RS - Rio Grande do Sul</option>
-                                    <option value="RO">RO - Rondônia</option>
-                                    <option value="RR">RR - Roraima</option>
-                                    <option value="SC">SC - Santa Catarina</option>
-                                    <option value="SP">SP - São Paulo</option>
-                                    <option value="SE">SE - Sergipe</option>
-                                    <option value="TO">TO - Tocantins</option>
+                                <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
                                 </datalist>   
                             </div>
                         </div>
@@ -496,8 +496,8 @@
                         </div>
                         <div class="col">
                             <div class="form-group col-md-15">
-                                <textarea style="resize: none;" class="form-control" name="comRC" id="comRC" cols="40" rows="3" minlength="20" maxlength="300" placeholder="Complemento:"></textarea>
-                                <span style="font-size: 12px;">⚠️(Descrição do imóvel, pontos de referência, etc. <br> Obs.: mínimo de 20 caracteres, máximo 300)</span>
+                                <textarea class="form-control" name="RP-com" id="RP-com" cols="40" rows="3" minlength="20" maxlength="300" placeholder="Complemento:"></textarea>
+                                <span>⚠️(Descrição do imóvel, pontos de referência, etc. Obs.: mínimo de 20 caracteres, máximo 300)</span>
                             </div>
                         </div>
                     </div>

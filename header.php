@@ -45,8 +45,8 @@
 
         <link rel="stylesheet" href="css/login.css">
 
-        <!-- DDI NO CAMPO TELEFONE -->
-        <link rel="stylesheet" href="css/ddi.css">
+        <!-- CSS - Vitor -->
+        <link rel="stylesheet" href="css/v-style.css">
 
     </head>
 
