@@ -46,6 +46,20 @@
             <form id="addPessoa" action="#">
                 <div class="container-fluid">
 
+                <div id="fade" class="hide">
+                    <div id="loader" class="spinner-border text-info hide" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div id="message" class="">
+                        <div class="alert alert-light hide" role="alert">
+                            <h4>Mensagem:</h4>
+                            <p>Testso da Mensagem...</p>
+                            <br>
+                            <button id="clonse-message" type="button" class="btn btn-secondary">Ok</button>
+                        </div>
+                    </div>
+                </div>
+
                     <!-- <div class="alert alert-dark p-1" role="alert">
                         Documentos
                     </div> -->

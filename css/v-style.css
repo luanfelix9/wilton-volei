@@ -2,9 +2,9 @@
     @import url('https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css');
     
     .iti__country-list{
-        color: white !important;
-        background-color: #1a1a1a !important;
-        border-color: #1a1a1a !important;
+        color: black !important;
+        background-color: white !important;
+        border-color: white !important;
     }
 
     .iti__selected-flag{
@@ -23,4 +23,40 @@
 /* CSS SPAN-INFO */
     span{
         font-size: 12px;
+    }
+
+/* CSS MESSAGEM - FADE */
+    #fade{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+    }
+
+    #fade .spinner-border{
+        width: 55px;
+        height: 55px;
+    }
+
+    .hide{
+        display: none !important;
+    }
+
+    #message{
+        width: 35%;
+    }
+
+    #message h4{
+        color: #1C1C1C;
+    }
+
+    .alert.alert-light p{
+        border-bottom: 1px solid #333;
+        padding: 1.2em 0;
     }
