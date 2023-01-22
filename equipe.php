@@ -17,7 +17,7 @@
     $con = new PDO("mysql:host=$host;dbname=$bd", $usuario, $senha);
 
     //BUSCANDO TABELA LOGIN
-    $tabelaLogin = "SELECT NOME_CLUBE, SIGLA_CLUBE FROM clube WHERE ID_CLUBE= :id";
+    $tabelaLogin = "SELECT NOME_CLUBE, SIGLA_CLUBE, FL_ADMINISTRADOR FROM clube WHERE ID_CLUBE= :id";
     $dadosLogin = $con->prepare($tabelaLogin);
     $dadosLogin->bindValue(":id", $id);
     $dadosLogin->execute();
@@ -60,20 +60,21 @@
                         </a>
                     </div>
                 </div>
-                <div class="row g-4">
-                    <div class="col-6">
-                        <a href="listarEquipe.php">
-                            <div class="topNav rounded d-flex align-items-center justify-content-between p-4 menuPrincipal">
-                                <i class="bi bi-list-check fa-3x text-secondary"></i>
-                                <div class="ms-3">
-                                    <p class="mb-2">Listar Equipe</p>
+                <?php if ($dadoLogin->FL_ADMINISTRADOR == 1){ ?>
+                    <div class="row g-4">
+                        <div class="col-6">
+                            <a href="listarEquipe.php">
+                                <div class="topNav rounded d-flex align-items-center justify-content-between p-4 menuPrincipal">
+                                    <i class="bi bi-list-check fa-3x text-secondary"></i>
+                                    <div class="ms-3">
+                                        <p class="mb-2">Listar Equipe</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
-                </div>
+                <?php }?>
             </div>
-            <!-- Sale & Revenue End -->
 
         </div>
 

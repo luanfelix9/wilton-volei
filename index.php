@@ -53,6 +53,16 @@
                             }
                                 unset($_SESSION['nao_login']);
                             ?>
+                             <?php
+                                if (isset($_SESSION['editado_sucesso'])) {
+                            ?>
+                                <div class="alert alert-danger" role="alert">
+                                    Clube editado com sucesso!
+                                </div>
+                            <?php
+                            }
+                                unset($_SESSION['editado_sucesso']);
+                            ?>
                         </div>
                         <form action="login-back.php" method="POST">
                             <div class="input-field">

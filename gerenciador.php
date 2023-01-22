@@ -40,16 +40,6 @@
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
                     <div class="col">
-                        <a href="gerenciador.php">
-                            <div class="topNav rounded d-flex align-items-center justify-content-between p-4 menuPrincipal">
-                                <i class="bi bi-house fa-3x text-secondary"></i>
-                                <div class="ms-3">
-                                    <p class="mb-2">Início</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
                         <a href="equipe.php">
                             <div class="topNav rounded d-flex align-items-center justify-content-between p-4">
                                 <i class="bi bi-people-fill fa-3x text-secondary"></i>
@@ -59,8 +49,6 @@
                             </div>
                         </a>
                     </div>
-                </div>
-                <div class="row g-4">
                     <div class="col">
                         <a href="pessoa.php">
                             <div class="topNav rounded d-flex align-items-center justify-content-between p-4">

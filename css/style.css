@@ -19,7 +19,7 @@ h6{
 }
 
 .topNav{
-    background-color: rgba(137,212,231,.5);
+    background-color: rgb(179, 226, 238);
 }
 
 .enviarEditarEquipe{
@@ -104,7 +104,7 @@ h6{
     width: 250px;
     height: 100vh;
     overflow-y: auto;
-    background: rgba(137,212,231,.5);
+    background: rgb(179, 226, 238);
     transition: 0.5s;
     z-index: 999;
 }
@@ -185,7 +185,7 @@ h6{
 
 .sidebar .navbar .navbar-nav .nav-link:hover i,
 .sidebar .navbar .navbar-nav .nav-link.active i {
-    background: rgba(137,212,231,.5);
+    background: rgb(179, 226, 238);
 }
 
 .sidebar .navbar .dropdown-toggle::after {
@@ -193,8 +193,8 @@ h6{
     top: 15px;
     right: 15px;
     border: none;
-    content: "\f107";
-    font-family: "Font Awesome 5 Free";
+    content:"\F284";
+    font-family: 'Roboto', sans-serif ;
     font-weight: 900;
     transition: .5s;
 }
@@ -251,8 +251,8 @@ h6{
     margin-left: 6px;
     vertical-align: middle;
     border: none;
-    content: "\f107";
-    font-family: "Font Awesome 5 Free";
+    content: "\F284";
+    font-family: 'Roboto', sans-serif ;
     font-weight: 900;
     transition: .5s;
 }
@@ -295,34 +295,3 @@ h6{
     border-bottom-color: rgba(254,207,36,255);
 }
 
-
-/*** Testimonial ***/
-.progress .progress-bar {
-    width: 0px;
-    transition: 2s;
-}
-
-
-/*** Testimonial ***/
-.testimonial-carousel .owl-dots {
-    margin-top: 24px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.testimonial-carousel .owl-dot {
-    position: relative;
-    display: inline-block;
-    margin: 0 5px;
-    width: 15px;
-    height: 15px;
-    border: 5px solid rgba(254,207,36,255);
-    border-radius: 15px;
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-dot.active {
-    background: white;
-    border-color: rgba(254,207,36,255);
-}

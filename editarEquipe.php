@@ -44,8 +44,38 @@
                         <strong>⚠️ Atenção!</strong> Qualquer alteração nos dados da equipe, será necessário aprovação da Federação.
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
+                    <?php
+                        if (isset($_SESSION['nao_login'])) {
+                    ?>
+                        <div class="alert alert-danger" role="alert">
+                            Campo obrigatório não preenchido!
+                        </div>
+                    <?php
+                    }
+                        unset($_SESSION['nao_login']);
+                    ?>
+                    <?php
+                        if (isset($_SESSION['senha_diferente'])) {
+                    ?>
+                        <div class="alert alert-danger" role="alert">
+                            A senha e confirmação de senha não são iguais!
+                        </div>
+                    <?php
+                    }
+                        unset($_SESSION['senha_diferente']);
+                    ?>
+                    <?php
+                        if (isset($_SESSION['erro_conexao'])) {
+                    ?>
+                        <div class="alert alert-danger" role="alert">
+                            Não foi possível enviar os dados, tente mais tarde!
+                        </div>
+                    <?php
+                    }
+                        unset($_SESSION['erro_conexao']);
+                    ?>
                 </div>
-                <form action="#">
+                <form action="editarEquipe-back.php" method="POST">
                     <div class="row">
                         <div class="col">
                             <div class="form-group">
@@ -77,7 +107,7 @@
                         </div>
                         <div id="siglaRC" class="form-group col inputBottom">
                             <p id="info"><span class="obrigatorio"></span>SIGLA: </p>
-                            <input class="form-control" type="text" name="siglaRC" id="siglaRC" autocomplete="off" minlength="3" maxlength="3" value="<?php echo isset($dadoLogin) ? $dadoLogin->SIGLA_CLUBE : null ?>" placeholder="*Sigla:" required>
+                            <input class="form-control" type="text" name="siglaRC" id="siglaRC" autocomplete="off" minlength="3" maxlength="4" value="<?php echo isset($dadoLogin) ? $dadoLogin->SIGLA_CLUBE : null ?>" placeholder="*Sigla:" required>
                         </div> 
                         <div id="dataF" class="form-group col inputBottom">
                             <p id="info"><span class="obrigatorio"></span>CRIAÇÃO: </p>
@@ -157,7 +187,7 @@
                         </div>
                         <div id="comRC" class="form-group col inputBottom">
                             <p id="info"><span class="obrigatorio"></span>COMPLEMENTO: </p>
-                            <input class="form-control" type="text" name="nRC" id="nRC" autocomplete="off" maxlength="140" value="<?php echo isset($dadoLogin) ? $dadoLogin->COMPLEMENTO_CLUBE : null ?>" placeholder="Complemento:">
+                            <input class="form-control" type="text" name="complemento" id="nRC" autocomplete="off" maxlength="140" value="<?php echo isset($dadoLogin) ? $dadoLogin->COMPLEMENTO_CLUBE : null ?>" placeholder="Complemento:">
                         </div>
                     </div>
                     <div class="row">
@@ -165,19 +195,19 @@
                             <p id="infoDados"> Modalidades</p>
                         </div>
                         <div id="div-checkbox" class="form-check col">
-                            <input class="form-check-input" type="checkbox" value="1" id="defaultCheck1">
+                            <input class="form-check-input" type="checkbox" value="on" id="defaultCheck1" name="vqm"<?php if($dadoLogin->VQM_CLUBE = 1){?> checked <?php }?>>
                             <label id="label-checkbox" class="form-check-label" for="defaultCheck1">VOLEIBOL DE QUADRA - MASCULINO</label>
                         </div>
                         <div id="div-checkbox" class="form-check col">
-                            <input class="form-check-input" type="checkbox" value="1" id="defaultCheck2">
+                            <input class="form-check-input" type="checkbox" value="on" id="defaultCheck2" name="vqf"<?php if($dadoLogin->VQF_CLUBE = 1){?> checked <?php }?>>
                             <label id="label-checkbox" class="form-check-label" for="defaultCheck2">VOLEIBOL DE QUADRA - FEMININO</label>
                         </div>
                         <div id="div-checkbox" class="form-check col">
-                            <input class="form-check-input" type="checkbox" value="1" id="defaultCheck3">
+                            <input class="form-check-input" type="checkbox" value="on" id="defaultCheck3" name="vam"<?php if($dadoLogin->VAM_CLUBE = 1){?> checked <?php }?>>
                             <label id="label-checkbox" class="form-check-label" for="defaultCheck3">VOLEIBOL DE AREIA - MASCULINO</label>
                         </div>
                         <div id="div-checkbox" class="form-check col">
-                            <input class="form-check-input" type="checkbox" value="1" id="defaultCheck4">
+                            <input class="form-check-input" type="checkbox" value="on" id="defaultCheck4" name="vaf"<?php if($dadoLogin->VAF_CLUBE = 1){?> checked <?php }?>>
                             <label id="label-checkbox" class="form-check-label" for="defaultCheck4">VOLEIBOL DE AREIA - FEMININO</label>
                         </div>
                     </div>
@@ -188,7 +218,7 @@
                         </div>
                         <div class="col enviarEditarEquipe">
                             <br>
-                            <button type="submit" class="btn btn-info" name="editar">Editar</button>
+                            <button type="submit" class="btn btn-info" value="Editar" name="editar">Editar</button>
                         </div>
                     </div>
                 </form>
@@ -203,7 +233,7 @@
             $("#cepRC").mask("00.000-000");
             $("#foneRC").mask("(00) 0 0000-0000");
             $("#cellRC").mask("(00) 0 0000-0000");
-            $("#cepRC").mask("00.000.000/0000-00");
+            $("#cnpjRC").mask("00.000.000/0000-00");
         </script>
 
         <?php include 'footer.php'?>
