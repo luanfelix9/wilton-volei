@@ -1,5 +1,5 @@
 <?php
-    session_start();
+     
     //TESTANDO O ID DO USUARIO
     if (!isset($_SESSION['ID_CLUBE'])) {
         header('Location: index.php');

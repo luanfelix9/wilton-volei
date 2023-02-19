@@ -3,7 +3,7 @@
     
     $u = new Cadastro;
     
-    session_start();
+     
     if(isset($_POST["entrar"])){
         $email = addslashes($_POST['email']);
         $senha = addslashes($_POST['senha']); 

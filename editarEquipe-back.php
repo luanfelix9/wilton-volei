@@ -3,7 +3,7 @@
     
     $u = new Cadastro;
     
-    session_start();
+     
     if(isset($_POST["editar"])){
         $nome = addslashes($_POST['nomeRC']);
         $email = addslashes($_POST['emailRC']);

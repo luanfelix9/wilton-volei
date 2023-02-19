@@ -53,7 +53,7 @@
             {
                //entrar no sistema
                $dado = $sql->fetch();
-               session_start();
+                
                $_SESSION['ID_CLUBE'] = $dado['ID_CLUBE'];
                return true; //entrou no sistema
             }
@@ -62,30 +62,19 @@
                 return false;// não foi possivel logar
             }
         }
-        // public function cadastrar($nome, $email, $senhaFinal, $telefone, $data)
-        // {
-        //     global $pdo;
-        //     //verificar email e senha
-        //     $sql = $pdo->prepare("SELECT ID_CLUBE FROM clube WHERE EMAIL_CLUBE = :b AND SENHA_CLUBE = :c ");
-        //     $sql->bindValue(":b",$email);
-        //     $sql->bindValue(":c",$senhaFinal);
-        //     $sql->execute();
-        //     if($sql->rowCount() > 0)
-        //     {
-        //         return false; // já cadastrada 
-        //     }
-        //     else
-        //     {
-        //         //cadastar
-        //         $sql = $pdo->prepare("INSERT INTO clube (NOME_CLUBE, EMAIL_CLUBE, CNPJ_CLUBE, SENHA_CLUBE, SIGLA_CLUBE, DATA_CRIACAO_CLUBE, TELEFONE_CLUBE, CELULAR_CLUBE, SITE_CLUBE, LOGRADOURO_CLUBE, BAIRRO_CLUBE, CIDADE_CLUBE, ESTADO_CLUBE, CEP_CLUBE, NUMERO_CLUBE, COMPLEMENTO_CLUBE, VQM_CLUBE, VQF_CLUBE, VAM_CLUBE VAF_CLUBE, FL_CLUBE) VALUES (:a, :b, :c, :d, :e)");
-        //         $sql->bindValue(":nc",$nome);
-        //         $sql->bindValue(":ec",$email);
-        //         $sql->bindValue(":c",$senhaFinal);
-        //         $sql->bindValue(":d",$telefone);
-        //         $sql->bindValue(":e",$data);
-        //         $sql->execute();
-        //         return true;
-        //     }
-        // }
+
+        public function status($cnpj){
+            global $pdo;
+            $sql = $pdo->prepare("SELECT FL_CLUBE FROM clube WHERE CNPJ_CLUBE = :d" );
+            $sql->bindValue(":d",$cnpj);
+            $sql->execute();
+            if($sql->FL_CLUBE = 0){
+                $sql = $pdo->prepare("UPDATE clube SET FL_CLUBE = 1" );
+                $sql->execute();
+            } else {
+                $sql = $pdo->prepare("UPDATE clube SET FL_CLUBE = 0" );
+                $sql->execute();
+            }
+        }
     }
 ?>
